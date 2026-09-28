@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Propuestas de diseño · Ingeniería Joaquín Rocamora</title>
+  <meta name="description" content="Tres propuestas de diseño para la página de inicio de la nueva web de Ingeniería Joaquín Rocamora.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #082440;
+      --navy-2: #0d2f52;
+      --gold: #E9AC00;
+      --ink: #1c2733;
+      --muted: #5b6875;
+      --line: #e3e7ec;
+      --bg: #f5f7fa;
+    }
+    * { box-sizing: border-box; margin: 0; }
+    body {
+      font-family: Inter, system-ui, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; }
+    .wrap { width: min(1180px, 100% - 32px); margin-inline: auto; }
+
+    header {
+      background: var(--navy);
+      color: #fff;
+      padding: 56px 0 120px;
+      position: relative;
+      overflow: hidden;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      right: -80px;
+      top: -40px;
+      width: 420px;
+      height: 360px;
+      background: url(assets/img/logo-simbolo.png) center / contain no-repeat;
+      opacity: .07;
+      pointer-events: none;
+    }
+    .logo { height: 44px; width: auto; }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 48px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+    .eyebrow::before { content: ""; width: 28px; height: 2px; background: var(--gold); }
+    h1 {
+      font-family: Manrope, sans-serif;
+      font-weight: 800;
+      font-size: clamp(32px, 5vw, 52px);
+      line-height: 1.1;
+      margin-top: 14px;
+      max-width: 780px;
+      letter-spacing: -.01em;
+    }
+    .lead { margin-top: 18px; max-width: 680px; color: #c5d0dc; font-size: 17px; }
+
+    main { margin-top: -72px; padding-bottom: 72px; position: relative; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .card {
+      background: #fff;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(8, 36, 64, .10);
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 18px 40px rgba(8, 36, 64, .16); }
+    .card:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+    .shot {
+      aspect-ratio: 16 / 11;
+      background: var(--line);
+      overflow: hidden;
+      border-bottom: 1px solid var(--line);
+    }
+    .shot img { width: 100%; height: 100%; object-fit: cover; object-position: top; transition: transform .6s ease; }
+    .card:hover .shot img { transform: scale(1.03); }
+    .body { padding: 24px 24px 28px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+    .num {
+      font-family: Manrope, sans-serif;
+      font-weight: 800;
+      font-size: 13px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .num b { color: var(--navy); background: var(--gold); padding: 2px 8px; border-radius: 4px; margin-right: 6px; }
+    h2 { font-family: Manrope, sans-serif; font-size: 22px; color: var(--navy); line-height: 1.25; }
+    .body p { color: var(--muted); font-size: 15px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+    .tags span { font-size: 12px; font-weight: 500; color: var(--navy); background: var(--bg); border: 1px solid var(--line); padding: 3px 10px; border-radius: 99px; }
+    .go {
+      margin-top: auto;
+      padding-top: 14px;
+      font-weight: 600;
+      color: var(--navy);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .go::after { content: "→"; color: var(--gold); font-size: 20px; transition: transform .2s ease; }
+    .card:hover .go::after { transform: translateX(4px); }
+
+    .notes {
+      margin-top: 48px;
+      background: #fff;
+      border-radius: 14px;
+      padding: 32px;
+      border-left: 4px solid var(--gold);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
+    .notes h3 { font-family: Manrope, sans-serif; color: var(--navy); font-size: 18px; margin-bottom: 10px; }
+    .notes ul { padding-left: 18px; color: var(--muted); font-size: 15px; }
+    .notes li + li { margin-top: 6px; }
+
+    footer { padding: 28px 0 40px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--line); }
+
+    @media (max-width: 980px) {
+      .grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 680px) {
+      header { padding: 36px 0 108px; }
+      .logo { height: 36px; }
+      .grid { grid-template-columns: 1fr; }
+      .notes { grid-template-columns: 1fr; padding: 24px; gap: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <img class="logo" src="assets/img/logo-horizontal-blanco.png" alt="Ingeniería Joaquín Rocamora">
+      <p class="eyebrow">Nueva web · Propuestas de diseño</p>
+      <h1>Tres direcciones visuales para la página de inicio</h1>
+      <p class="lead">Las tres maquetas usan exactamente el mismo contenido que la web en desarrollo; solo cambia el diseño. El dorado del logo se mantiene en todas como color de realce.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="grid">
+      <a class="card" href="propuesta-1/">
+        <div class="shot"><img src="assets/previews/propuesta-1.jpg" alt="Vista previa de la propuesta 1"></div>
+        <div class="body">
+          <span class="num"><b>01</b>Propuesta</span>
+          <h2>Corporativa luminosa</h2>
+          <p>La más cercana a la identidad actual, pero más limpia y con más aire. Fondos claros, azul marino para textos y dorado en botones y cifras.</p>
+          <div class="tags"><span>Clara</span><span>Cercana a la actual</span><span>Manrope + Inter</span></div>
+          <span class="go">Ver propuesta</span>
+        </div>
+      </a>
+      <a class="card" href="propuesta-2/">
+        <div class="shot"><img src="assets/previews/propuesta-2.jpg" alt="Vista previa de la propuesta 2"></div>
+        <div class="body">
+          <span class="num"><b>02</b>Propuesta</span>
+          <h2>Arquitectónica editorial</h2>
+          <p>Tono más premium, tipo estudio de arquitectura: titulares con serif elegante, composición tipo revista y líneas finas doradas.</p>
+          <div class="tags"><span>Premium</span><span>Editorial</span><span>Fraunces + DM Sans</span></div>
+          <span class="go">Ver propuesta</span>
+        </div>
+      </a>
+      <a class="card" href="propuesta-3/">
+        <div class="shot"><img src="assets/previews/propuesta-3.jpg" alt="Vista previa de la propuesta 3"></div>
+        <div class="body">
+          <span class="num"><b>03</b>Propuesta</span>
+          <h2>Técnica con contraste</h2>
+          <p>Más impacto visual: secciones oscuras y claras alternas, guiños a los planos de ingeniería (rejilla, cotas) y el dorado como único realce.</p>
+          <div class="tags"><span>Contraste</span><span>Técnica</span><span>Space Grotesk + Inter</span></div>
+          <span class="go">Ver propuesta</span>
+        </div>
+      </a>
+    </div>
+
+    <section class="notes">
+      <div>
+        <h3>Qué incluye cada propuesta</h3>
+        <ul>
+          <li>Página de inicio completa: cabecera, cifras, servicios, sectores, empresa, proyectos, historia, contacto y pie.</li>
+          <li>Adaptada a móvil, tablet y escritorio (se puede probar estrechando la ventana).</li>
+          <li>Animaciones suaves al hacer scroll y contadores animados.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>A tener en cuenta</h3>
+        <ul>
+          <li>Son maquetas visuales en HTML, no la web final: los enlaces internos y el formulario no están operativos.</li>
+          <li>Se pueden combinar elementos de varias propuestas (p. ej. la cabecera de una y los servicios de otra).</li>
+          <li>Textos, cifras y fotos son los de la web en desarrollo.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">Ingeniería Joaquín Rocamora · Propuestas de diseño para la nueva web · 2026</div>
+  </footer>
+</body>
+</html>
