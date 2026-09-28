@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ingeniería Joaquín Rocamora · Propuesta 4 · Minimal suiza</title>
+  <meta name="description" content="Ingeniería Joaquín Rocamora: soluciones de ingeniería para proyectos industriales y civiles desde 1992. Elche (Alicante).">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="../assets/js/main.js" defer></script>
+</head>
+<body id="top">
+
+<!-- Iconos de línea (estilo Lucide, dibujados a mano) -->
+<svg class="sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16"/><path d="m14 6 6 6-6 6"/></symbol>
+  <symbol id="i-arrow-ne" viewBox="0 0 24 24"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></symbol>
+  <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 20V4"/><path d="m6 10 6-6 6 6"/></symbol>
+  <symbol id="i-fuel" viewBox="0 0 24 24"><path d="M3 22h12"/><path d="M4 22V4a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v18"/><path d="M4 10h10"/><path d="M14 13h2a2 2 0 0 1 2 2v2.5a1.5 1.5 0 0 0 3 0V9l-3-3"/><path d="M18 6v2.5a1 1 0 0 0 1 1h2"/></symbol>
+  <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9Z"/></symbol>
+</svg>
+
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<!-- ============ HEADER ============ -->
+<header class="header" data-header>
+  <div class="wrap header__inner">
+    <a class="header__logo" href="#top" aria-label="Ingeniería Joaquín Rocamora – inicio">
+      <img src="../assets/img/logo-horizontal-azul.png" alt="Joaquín Rocamora Ingeniería" width="1207" height="292">
+    </a>
+    <nav class="nav" id="nav" data-nav aria-label="Principal">
+      <ul class="nav__list">
+        <li><a href="#empresa">Empresa</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#sectores">Sectores</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <div class="nav__extra">
+        <a class="btn btn--gold" href="#contacto">Solicita información <svg class="ico"><use href="#i-arrow"/></svg></a>
+        <p>96 661 50 53<br>info@ingenieriarocamora.com</p>
+      </div>
+    </nav>
+    <a class="header__cta" href="#contacto">Solicita información</a>
+    <button class="burger" type="button" data-nav-toggle aria-controls="nav" aria-expanded="false" aria-label="Abrir menú">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <ul class="hero__meta grid" aria-label="Datos de la empresa">
+        <li>Ingeniería Joaquín Rocamora</li>
+        <li>Elche (Alicante)</li>
+        <li>Desde 1992</li>
+        <li>Proyectos en toda España</li>
+      </ul>
+
+      <h1 class="hero__title" id="hero-title">
+        <span>Ingeniería que</span>
+        <span>construye</span>
+        <span>tu futuro</span>
+      </h1>
+
+      <div class="hero__row grid">
+        <p class="hero__lead">Soluciones de ingeniería para proyectos industriales y civiles con rigor, experiencia y compromiso</p>
+        <div class="hero__actions">
+          <a class="btn btn--gold" href="#proyectos">Nuestros proyectos <svg class="ico"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn--line" href="#empresa">Conócenos <svg class="ico"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <figure class="hero__media wrap">
+      <img src="../assets/img/direccion-obra.webp" alt="Manos revisando planos con lápiz, calculadora y nivel sobre la mesa de proyecto" width="2000" height="1333" fetchpriority="high">
+      <figcaption>Fig. 01 — Proyecto y dirección técnica</figcaption>
+    </figure>
+  </section>
+
+  <!-- ============ CIFRAS ============ -->
+  <section class="stats" aria-label="Cifras de la empresa">
+    <div class="wrap">
+      <ul class="stats__grid">
+        <li class="stat" data-reveal>
+          <span class="stat__idx">A</span>
+          <p class="stat__num"><span class="stat__plus">+</span><span data-count="30">30</span></p>
+          <p class="stat__label">años de trayectoria</p>
+        </li>
+        <li class="stat" data-reveal>
+          <span class="stat__idx">B</span>
+          <p class="stat__num"><span class="stat__plus">+</span><span data-count="2">2</span></p>
+          <p class="stat__label">millones de m² de superficie proyectada</p>
+        </li>
+        <li class="stat" data-reveal>
+          <span class="stat__idx">C</span>
+          <p class="stat__num"><span class="stat__plus">+</span><span data-count="2500">2.500</span></p>
+          <p class="stat__label">proyectos ejecutados</p>
+        </li>
+        <li class="stat" data-reveal>
+          <span class="stat__idx">D</span>
+          <p class="stat__num"><span data-count="20">20</span></p>
+          <p class="stat__label">técnicos expertos</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ SERVICIOS ============ -->
+  <section class="sec" id="servicios" aria-labelledby="servicios-title">
+    <div class="wrap grid sec__top">
+      <p class="sec__label"><span class="sec__num">01</span><span>Servicios</span></p>
+      <div class="sec__head">
+        <h2 id="servicios-title" data-reveal>Nuestros servicios</h2>
+        <div class="sec__sub">
+          <p>Un servicio integral adaptado a las necesidades de cada cliente, con un enfoque técnico, práctico y orientado a resultados.</p>
+          <a class="link" href="#servicios">Descubre todos nuestros servicios <svg class="ico"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <ol class="rows">
+        <li><a class="row grid" href="#servicios">
+          <span class="row__num">01.1</span>
+          <span class="row__name">Edificación</span>
+          <span class="row__desc">Naves industriales, edificios terciarios y dotacionales.</span>
+          <svg class="ico row__arrow"><use href="#i-arrow-ne"/></svg>
+        </a></li>
+        <li><a class="row grid" href="#servicios">
+          <span class="row__num">01.2</span>
+          <span class="row__name">Instalaciones</span>
+          <span class="row__desc">Diseño y cálculo de instalaciones de alta eficiencia.</span>
+          <svg class="ico row__arrow"><use href="#i-arrow-ne"/></svg>
+        </a></li>
+        <li><a class="row grid" href="#servicios">
+          <span class="row__num">01.3</span>
+          <span class="row__name">Medio ambiente</span>
+          <span class="row__desc">Tramitación ambiental y sostenibilidad.</span>
+          <svg class="ico row__arrow"><use href="#i-arrow-ne"/></svg>
+        </a></li>
+        <li><a class="row grid" href="#servicios">
+          <span class="row__num">01.4</span>
+          <span class="row__name">Energía</span>
+          <span class="row__desc">Instalaciones orientadas al ahorro energético.</span>
+          <svg class="ico row__arrow"><use href="#i-arrow-ne"/></svg>
+        </a></li>
+        <li><a class="row grid" href="#servicios">
+          <span class="row__num">01.5</span>
+          <span class="row__name">Actividades</span>
+          <span class="row__desc">Redactamos y gestionamos los trámites para obtener tu licencia de apertura.</span>
+          <svg class="ico row__arrow"><use href="#i-arrow-ne"/></svg>
+        </a></li>
+        <li><a class="row grid" href="#servicios">
+          <span class="row__num">01.6</span>
+          <span class="row__name">Otros servicios</span>
+          <span class="row__desc">Cálculo estructural, infografías 3D, urbanizaciones… y más.</span>
+          <svg class="ico row__arrow"><use href="#i-arrow-ne"/></svg>
+        </a></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ SECTORES ============ -->
+  <section class="sec" id="sectores" aria-labelledby="sectores-title">
+    <div class="wrap grid sec__top">
+      <p class="sec__label"><span class="sec__num">02</span><span>Sectores</span></p>
+      <div class="sec__head">
+        <h2 id="sectores-title" data-reveal>Nuestros sectores</h2>
+        <div class="sec__sub">
+          <p>Aplicamos nuestro conocimiento en distintos ámbitos de la construcción, con soluciones técnicas eficientes y adaptadas a cada necesidad.</p>
+          <a class="link" href="#sectores">Ver todos los sectores <svg class="ico"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap sectors">
+      <article class="sector" data-reveal>
+        <a class="sector__media" href="#sectores" tabindex="-1" aria-hidden="true">
+          <img src="../assets/img/CARTONAJE_VEGA_BAJA1.webp" alt="" width="798" height="599" loading="lazy">
+        </a>
+        <div class="sector__body">
+          <p class="sector__num">02.1</p>
+          <h3 class="sector__title">Industria y logística</h3>
+          <div class="sector__text">
+            <p>Experiencia, conocimiento y dedicación son nuestra base en el sector…</p>
+            <p>Visión táctica y estratégica de la cadena logística, asegurando la eficacia y calidad…</p>
+          </div>
+          <a class="link link--sm" href="#sectores">Ver más <span class="sr-only">sobre Industria y logística</span><svg class="ico"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+
+      <article class="sector" data-reveal>
+        <div class="sector__media sector__media--block" aria-hidden="true">
+          <svg class="sector__icon"><use href="#i-fuel"/></svg>
+          <svg class="sector__icon"><use href="#i-wrench"/></svg>
+        </div>
+        <div class="sector__body">
+          <p class="sector__num">02.2</p>
+          <h3 class="sector__title">Talleres y estaciones de servicio</h3>
+          <div class="sector__text">
+            <p>Desarrollo completo de los proyectos y legalizaciones necesarias…</p>
+            <p>Gestión integral del diseño, proyecto, implantación y puesta en marcha…</p>
+          </div>
+          <a class="link link--sm" href="#sectores">Ver más <span class="sr-only">sobre Talleres y estaciones de servicio</span><svg class="ico"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+
+      <article class="sector" data-reveal>
+        <a class="sector__media" href="#sectores" tabindex="-1" aria-hidden="true">
+          <img src="../assets/img/SOL_DAD_CENTRAL2.webp" alt="" width="797" height="530" loading="lazy">
+        </a>
+        <div class="sector__body">
+          <p class="sector__num">02.3</p>
+          <h3 class="sector__title">Comercial e infraestructuras</h3>
+          <div class="sector__text">
+            <p>Diseños de edificios y espacios funcionales para optimizar la inversión…</p>
+            <p>Amplio desarrollo de infraestructuras necesarias para cualquier proyecto…</p>
+          </div>
+          <a class="link link--sm" href="#sectores">Ver más <span class="sr-only">sobre Comercial e infraestructuras</span><svg class="ico"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+
+      <article class="sector" data-reveal>
+        <a class="sector__media" href="#sectores" tabindex="-1" aria-hidden="true">
+          <img src="../assets/img/UNION_SOLAR_COSTABLANCA3.webp" alt="" width="791" height="526" loading="lazy">
+        </a>
+        <div class="sector__body">
+          <p class="sector__num">02.4</p>
+          <h3 class="sector__title">Agroalimentario y energías renovables</h3>
+          <div class="sector__text">
+            <p>Desarrollo de plataformas logísticas frigoríficas e industrias agroalimentarias…</p>
+            <p>Proyectos enfocados hacia el ahorro energético e implantación de equipos de alta eficiencia…</p>
+          </div>
+          <a class="link link--sm" href="#sectores">Ver más <span class="sr-only">sobre Agroalimentario y energías renovables</span><svg class="ico"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ SOBRE NOSOTROS ============ -->
+  <section class="sec" id="empresa" aria-labelledby="empresa-title">
+    <div class="wrap grid sec__top">
+      <p class="sec__label"><span class="sec__num">03</span><span>Sobre nosotros</span></p>
+      <div class="sec__head about">
+        <h2 id="empresa-title" class="about__title" data-reveal>Un equipo comprometido con tu proyecto</h2>
+        <div class="about__cols">
+          <p>Combinamos experiencia, conocimiento técnico y una visión práctica para aportar soluciones reales a cada reto.</p>
+          <p>Nuestro objetivo es generar valor en todas las fases del proyecto.</p>
+        </div>
+        <dl class="facts">
+          <div><dt>Constitución</dt><dd>1992</dd></div>
+          <div><dt>Sede</dt><dd>Elche (Alicante)</dd></div>
+          <div><dt>Equipo</dt><dd>20 técnicos</dd></div>
+          <div><dt>Ámbito</dt><dd>Nacional</dd></div>
+        </dl>
+        <a class="btn btn--dark" href="#empresa">Conoce nuestra empresa <svg class="ico"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROYECTOS EN TODA ESPAÑA ============ -->
+  <section class="sec" aria-labelledby="espana-title">
+    <div class="wrap grid sec__top">
+      <p class="sec__label"><span class="sec__num">04</span><span>Alcance</span></p>
+      <div class="sec__head spain">
+        <div class="spain__text">
+          <h2 id="espana-title" data-reveal>Proyectos en toda España</h2>
+          <p>Hemos desarrollado proyectos en numerosas provincias, acompañando a nuestros clientes allí donde lo necesitan.</p>
+          <p class="spain__legend"><i></i>Oficina principal — Elche (Alicante)</p>
+        </div>
+        <figure class="spain__map" data-reveal>
+          <svg viewBox="0 0 440 462" role="img" aria-labelledby="map-t">
+            <title id="map-t">Mapa de puntos de España con la sede de Elche destacada</title>
+            <path class="map__dots" d="M52.8 13.2h0M59.4 13.2h0M66.0 13.2h0M39.6 19.8h0M46.2 19.8h0M52.8 19.8h0M59.4 19.8h0M66.0 19.8h0M72.6 19.8h0M79.2 19.8h0M85.8 19.8h0M92.4 19.8h0M99.0 19.8h0M105.6 19.8h0M112.2 19.8h0M118.8 19.8h0M125.4 19.8h0M132.0 19.8h0M138.6 19.8h0M26.4 26.4h0M33.0 26.4h0M39.6 26.4h0M46.2 26.4h0M52.8 26.4h0M59.4 26.4h0M66.0 26.4h0M72.6 26.4h0M79.2 26.4h0M85.8 26.4h0M92.4 26.4h0M99.0 26.4h0M105.6 26.4h0M112.2 26.4h0M118.8 26.4h0M125.4 26.4h0M132.0 26.4h0M138.6 26.4h0M145.2 26.4h0M151.8 26.4h0M158.4 26.4h0M165.0 26.4h0M171.6 26.4h0M178.2 26.4h0M184.8 26.4h0M191.4 26.4h0M198.0 26.4h0M204.6 26.4h0M211.2 26.4h0M217.8 26.4h0M224.4 26.4h0M231.0 26.4h0M237.6 26.4h0M19.8 33.0h0M26.4 33.0h0M33.0 33.0h0M39.6 33.0h0M46.2 33.0h0M52.8 33.0h0M59.4 33.0h0M66.0 33.0h0M72.6 33.0h0M79.2 33.0h0M85.8 33.0h0M92.4 33.0h0M99.0 33.0h0M105.6 33.0h0M112.2 33.0h0M118.8 33.0h0M125.4 33.0h0M132.0 33.0h0M138.6 33.0h0M145.2 33.0h0M151.8 33.0h0M158.4 33.0h0M165.0 33.0h0M171.6 33.0h0M178.2 33.0h0M184.8 33.0h0M191.4 33.0h0M198.0 33.0h0M204.6 33.0h0M211.2 33.0h0M217.8 33.0h0M224.4 33.0h0M231.0 33.0h0M237.6 33.0h0M244.2 33.0h0M13.2 39.6h0M19.8 39.6h0M26.4 39.6h0M33.0 39.6h0M39.6 39.6h0M46.2 39.6h0M52.8 39.6h0M59.4 39.6h0M66.0 39.6h0M72.6 39.6h0M79.2 39.6h0M85.8 39.6h0M92.4 39.6h0M99.0 39.6h0M105.6 39.6h0M112.2 39.6h0M118.8 39.6h0M125.4 39.6h0M132.0 39.6h0M138.6 39.6h0M145.2 39.6h0M151.8 39.6h0M158.4 39.6h0M165.0 39.6h0M171.6 39.6h0M178.2 39.6h0M184.8 39.6h0M191.4 39.6h0M198.0 39.6h0M204.6 39.6h0M211.2 39.6h0M217.8 39.6h0M224.4 39.6h0M231.0 39.6h0M237.6 39.6h0M244.2 39.6h0M250.8 39.6h0M13.2 46.2h0M19.8 46.2h0M26.4 46.2h0M33.0 46.2h0M39.6 46.2h0M46.2 46.2h0M52.8 46.2h0M59.4 46.2h0M66.0 46.2h0M72.6 46.2h0M79.2 46.2h0M85.8 46.2h0M92.4 46.2h0M99.0 46.2h0M105.6 46.2h0M112.2 46.2h0M118.8 46.2h0M125.4 46.2h0M132.0 46.2h0M138.6 46.2h0M145.2 46.2h0M151.8 46.2h0M158.4 46.2h0M165.0 46.2h0M171.6 46.2h0M178.2 46.2h0M184.8 46.2h0M191.4 46.2h0M198.0 46.2h0M204.6 46.2h0M211.2 46.2h0M217.8 46.2h0M224.4 46.2h0M231.0 46.2h0M237.6 46.2h0M244.2 46.2h0M250.8 46.2h0M257.4 46.2h0M264.0 46.2h0M303.6 46.2h0M310.2 46.2h0M316.8 46.2h0M19.8 52.8h0M26.4 52.8h0M33.0 52.8h0M39.6 52.8h0M46.2 52.8h0M52.8 52.8h0M59.4 52.8h0M66.0 52.8h0M72.6 52.8h0M79.2 52.8h0M85.8 52.8h0M92.4 52.8h0M99.0 52.8h0M105.6 52.8h0M112.2 52.8h0M118.8 52.8h0M125.4 52.8h0M132.0 52.8h0M138.6 52.8h0M145.2 52.8h0M151.8 52.8h0M158.4 52.8h0M165.0 52.8h0M171.6 52.8h0M178.2 52.8h0M184.8 52.8h0M191.4 52.8h0M198.0 52.8h0M204.6 52.8h0M211.2 52.8h0M217.8 52.8h0M224.4 52.8h0M231.0 52.8h0M237.6 52.8h0M244.2 52.8h0M250.8 52.8h0M257.4 52.8h0M264.0 52.8h0M270.6 52.8h0M277.2 52.8h0M283.8 52.8h0M290.4 52.8h0M297.0 52.8h0M303.6 52.8h0M310.2 52.8h0M316.8 52.8h0M323.4 52.8h0M330.0 52.8h0M26.4 59.4h0M33.0 59.4h0M39.6 59.4h0M46.2 59.4h0M52.8 59.4h0M59.4 59.4h0M66.0 59.4h0M72.6 59.4h0M79.2 59.4h0M85.8 59.4h0M92.4 59.4h0M99.0 59.4h0M105.6 59.4h0M112.2 59.4h0M118.8 59.4h0M125.4 59.4h0M132.0 59.4h0M138.6 59.4h0M145.2 59.4h0M151.8 59.4h0M158.4 59.4h0M165.0 59.4h0M171.6 59.4h0M178.2 59.4h0M184.8 59.4h0M191.4 59.4h0M198.0 59.4h0M204.6 59.4h0M211.2 59.4h0M217.8 59.4h0M224.4 59.4h0M231.0 59.4h0M237.6 59.4h0M244.2 59.4h0M250.8 59.4h0M257.4 59.4h0M264.0 59.4h0M270.6 59.4h0M277.2 59.4h0M283.8 59.4h0M290.4 59.4h0M297.0 59.4h0M303.6 59.4h0M310.2 59.4h0M316.8 59.4h0M323.4 59.4h0M330.0 59.4h0M336.6 59.4h0M343.2 59.4h0M26.4 66.0h0M33.0 66.0h0M39.6 66.0h0M46.2 66.0h0M52.8 66.0h0M59.4 66.0h0M66.0 66.0h0M72.6 66.0h0M79.2 66.0h0M85.8 66.0h0M92.4 66.0h0M99.0 66.0h0M105.6 66.0h0M112.2 66.0h0M118.8 66.0h0M125.4 66.0h0M132.0 66.0h0M138.6 66.0h0M145.2 66.0h0M151.8 66.0h0M158.4 66.0h0M165.0 66.0h0M171.6 66.0h0M178.2 66.0h0M184.8 66.0h0M191.4 66.0h0M198.0 66.0h0M204.6 66.0h0M211.2 66.0h0M217.8 66.0h0M224.4 66.0h0M231.0 66.0h0M237.6 66.0h0M244.2 66.0h0M250.8 66.0h0M257.4 66.0h0M264.0 66.0h0M270.6 66.0h0M277.2 66.0h0M283.8 66.0h0M290.4 66.0h0M297.0 66.0h0M303.6 66.0h0M310.2 66.0h0M316.8 66.0h0M323.4 66.0h0M330.0 66.0h0M336.6 66.0h0M343.2 66.0h0M349.8 66.0h0M356.4 66.0h0M363.0 66.0h0M369.6 66.0h0M376.2 66.0h0M382.8 66.0h0M389.4 66.0h0M26.4 72.6h0M33.0 72.6h0M39.6 72.6h0M46.2 72.6h0M52.8 72.6h0M59.4 72.6h0M66.0 72.6h0M72.6 72.6h0M79.2 72.6h0M85.8 72.6h0M92.4 72.6h0M99.0 72.6h0M105.6 72.6h0M112.2 72.6h0M118.8 72.6h0M125.4 72.6h0M132.0 72.6h0M138.6 72.6h0M145.2 72.6h0M151.8 72.6h0M158.4 72.6h0M165.0 72.6h0M171.6 72.6h0M178.2 72.6h0M184.8 72.6h0M191.4 72.6h0M198.0 72.6h0M204.6 72.6h0M211.2 72.6h0M217.8 72.6h0M224.4 72.6h0M231.0 72.6h0M237.6 72.6h0M244.2 72.6h0M250.8 72.6h0M257.4 72.6h0M264.0 72.6h0M270.6 72.6h0M277.2 72.6h0M283.8 72.6h0M290.4 72.6h0M297.0 72.6h0M303.6 72.6h0M310.2 72.6h0M316.8 72.6h0M323.4 72.6h0M330.0 72.6h0M336.6 72.6h0M343.2 72.6h0M349.8 72.6h0M356.4 72.6h0M363.0 72.6h0M369.6 72.6h0M376.2 72.6h0M382.8 72.6h0M389.4 72.6h0M26.4 79.2h0M33.0 79.2h0M39.6 79.2h0M46.2 79.2h0M52.8 79.2h0M59.4 79.2h0M66.0 79.2h0M72.6 79.2h0M79.2 79.2h0M85.8 79.2h0M92.4 79.2h0M99.0 79.2h0M105.6 79.2h0M112.2 79.2h0M118.8 79.2h0M125.4 79.2h0M132.0 79.2h0M138.6 79.2h0M145.2 79.2h0M151.8 79.2h0M158.4 79.2h0M165.0 79.2h0M171.6 79.2h0M178.2 79.2h0M184.8 79.2h0M191.4 79.2h0M198.0 79.2h0M204.6 79.2h0M211.2 79.2h0M217.8 79.2h0M224.4 79.2h0M231.0 79.2h0M237.6 79.2h0M244.2 79.2h0M250.8 79.2h0M257.4 79.2h0M264.0 79.2h0M270.6 79.2h0M277.2 79.2h0M283.8 79.2h0M290.4 79.2h0M297.0 79.2h0M303.6 79.2h0M310.2 79.2h0M316.8 79.2h0M323.4 79.2h0M330.0 79.2h0M336.6 79.2h0M343.2 79.2h0M349.8 79.2h0M356.4 79.2h0M363.0 79.2h0M369.6 79.2h0M376.2 79.2h0M382.8 79.2h0M389.4 79.2h0M46.2 85.8h0M52.8 85.8h0M99.0 85.8h0M105.6 85.8h0M112.2 85.8h0M118.8 85.8h0M125.4 85.8h0M132.0 85.8h0M138.6 85.8h0M145.2 85.8h0M151.8 85.8h0M158.4 85.8h0M165.0 85.8h0M171.6 85.8h0M178.2 85.8h0M184.8 85.8h0M191.4 85.8h0M198.0 85.8h0M204.6 85.8h0M211.2 85.8h0M217.8 85.8h0M224.4 85.8h0M231.0 85.8h0M237.6 85.8h0M244.2 85.8h0M250.8 85.8h0M257.4 85.8h0M264.0 85.8h0M270.6 85.8h0M277.2 85.8h0M283.8 85.8h0M290.4 85.8h0M297.0 85.8h0M303.6 85.8h0M310.2 85.8h0M316.8 85.8h0M323.4 85.8h0M330.0 85.8h0M336.6 85.8h0M343.2 85.8h0M349.8 85.8h0M356.4 85.8h0M363.0 85.8h0M369.6 85.8h0M376.2 85.8h0M382.8 85.8h0M389.4 85.8h0M105.6 92.4h0M112.2 92.4h0M118.8 92.4h0M125.4 92.4h0M132.0 92.4h0M138.6 92.4h0M145.2 92.4h0M151.8 92.4h0M158.4 92.4h0M165.0 92.4h0M171.6 92.4h0M178.2 92.4h0M184.8 92.4h0M191.4 92.4h0M198.0 92.4h0M204.6 92.4h0M211.2 92.4h0M217.8 92.4h0M224.4 92.4h0M231.0 92.4h0M237.6 92.4h0M244.2 92.4h0M250.8 92.4h0M257.4 92.4h0M264.0 92.4h0M270.6 92.4h0M277.2 92.4h0M283.8 92.4h0M290.4 92.4h0M297.0 92.4h0M303.6 92.4h0M310.2 92.4h0M316.8 92.4h0M323.4 92.4h0M330.0 92.4h0M336.6 92.4h0M343.2 92.4h0M349.8 92.4h0M356.4 92.4h0M363.0 92.4h0M369.6 92.4h0M376.2 92.4h0M105.6 99.0h0M112.2 99.0h0M118.8 99.0h0M125.4 99.0h0M132.0 99.0h0M138.6 99.0h0M145.2 99.0h0M151.8 99.0h0M158.4 99.0h0M165.0 99.0h0M171.6 99.0h0M178.2 99.0h0M184.8 99.0h0M191.4 99.0h0M198.0 99.0h0M204.6 99.0h0M211.2 99.0h0M217.8 99.0h0M224.4 99.0h0M231.0 99.0h0M237.6 99.0h0M244.2 99.0h0M250.8 99.0h0M257.4 99.0h0M264.0 99.0h0M270.6 99.0h0M277.2 99.0h0M283.8 99.0h0M290.4 99.0h0M297.0 99.0h0M303.6 99.0h0M310.2 99.0h0M316.8 99.0h0M323.4 99.0h0M330.0 99.0h0M336.6 99.0h0M343.2 99.0h0M349.8 99.0h0M356.4 99.0h0M363.0 99.0h0M99.0 105.6h0M105.6 105.6h0M112.2 105.6h0M118.8 105.6h0M125.4 105.6h0M132.0 105.6h0M138.6 105.6h0M145.2 105.6h0M151.8 105.6h0M158.4 105.6h0M165.0 105.6h0M171.6 105.6h0M178.2 105.6h0M184.8 105.6h0M191.4 105.6h0M198.0 105.6h0M204.6 105.6h0M211.2 105.6h0M217.8 105.6h0M224.4 105.6h0M231.0 105.6h0M237.6 105.6h0M244.2 105.6h0M250.8 105.6h0M257.4 105.6h0M264.0 105.6h0M270.6 105.6h0M277.2 105.6h0M283.8 105.6h0M290.4 105.6h0M297.0 105.6h0M303.6 105.6h0M310.2 105.6h0M316.8 105.6h0M323.4 105.6h0M330.0 105.6h0M336.6 105.6h0M343.2 105.6h0M349.8 105.6h0M356.4 105.6h0M92.4 112.2h0M99.0 112.2h0M105.6 112.2h0M112.2 112.2h0M118.8 112.2h0M125.4 112.2h0M132.0 112.2h0M138.6 112.2h0M145.2 112.2h0M151.8 112.2h0M158.4 112.2h0M165.0 112.2h0M171.6 112.2h0M178.2 112.2h0M184.8 112.2h0M191.4 112.2h0M198.0 112.2h0M204.6 112.2h0M211.2 112.2h0M217.8 112.2h0M224.4 112.2h0M231.0 112.2h0M237.6 112.2h0M244.2 112.2h0M250.8 112.2h0M257.4 112.2h0M264.0 112.2h0M270.6 112.2h0M277.2 112.2h0M283.8 112.2h0M290.4 112.2h0M297.0 112.2h0M303.6 112.2h0M310.2 112.2h0M316.8 112.2h0M323.4 112.2h0M330.0 112.2h0M336.6 112.2h0M92.4 118.8h0M99.0 118.8h0M105.6 118.8h0M112.2 118.8h0M118.8 118.8h0M125.4 118.8h0M132.0 118.8h0M138.6 118.8h0M145.2 118.8h0M151.8 118.8h0M158.4 118.8h0M165.0 118.8h0M171.6 118.8h0M178.2 118.8h0M184.8 118.8h0M191.4 118.8h0M198.0 118.8h0M204.6 118.8h0M211.2 118.8h0M217.8 118.8h0M224.4 118.8h0M231.0 118.8h0M237.6 118.8h0M244.2 118.8h0M250.8 118.8h0M257.4 118.8h0M264.0 118.8h0M270.6 118.8h0M277.2 118.8h0M283.8 118.8h0M290.4 118.8h0M297.0 118.8h0M303.6 118.8h0M310.2 118.8h0M316.8 118.8h0M323.4 118.8h0M85.8 125.4h0M92.4 125.4h0M99.0 125.4h0M105.6 125.4h0M112.2 125.4h0M118.8 125.4h0M125.4 125.4h0M132.0 125.4h0M138.6 125.4h0M145.2 125.4h0M151.8 125.4h0M158.4 125.4h0M165.0 125.4h0M171.6 125.4h0M178.2 125.4h0M184.8 125.4h0M191.4 125.4h0M198.0 125.4h0M204.6 125.4h0M211.2 125.4h0M217.8 125.4h0M224.4 125.4h0M231.0 125.4h0M237.6 125.4h0M244.2 125.4h0M250.8 125.4h0M257.4 125.4h0M264.0 125.4h0M270.6 125.4h0M277.2 125.4h0M283.8 125.4h0M290.4 125.4h0M297.0 125.4h0M303.6 125.4h0M310.2 125.4h0M316.8 125.4h0M85.8 132.0h0M92.4 132.0h0M99.0 132.0h0M105.6 132.0h0M112.2 132.0h0M118.8 132.0h0M125.4 132.0h0M132.0 132.0h0M138.6 132.0h0M145.2 132.0h0M151.8 132.0h0M158.4 132.0h0M165.0 132.0h0M171.6 132.0h0M178.2 132.0h0M184.8 132.0h0M191.4 132.0h0M198.0 132.0h0M204.6 132.0h0M211.2 132.0h0M217.8 132.0h0M224.4 132.0h0M231.0 132.0h0M237.6 132.0h0M244.2 132.0h0M250.8 132.0h0M257.4 132.0h0M264.0 132.0h0M270.6 132.0h0M277.2 132.0h0M283.8 132.0h0M290.4 132.0h0M297.0 132.0h0M303.6 132.0h0M310.2 132.0h0M316.8 132.0h0M85.8 138.6h0M92.4 138.6h0M99.0 138.6h0M105.6 138.6h0M112.2 138.6h0M118.8 138.6h0M125.4 138.6h0M132.0 138.6h0M138.6 138.6h0M145.2 138.6h0M151.8 138.6h0M158.4 138.6h0M165.0 138.6h0M171.6 138.6h0M178.2 138.6h0M184.8 138.6h0M191.4 138.6h0M198.0 138.6h0M204.6 138.6h0M211.2 138.6h0M217.8 138.6h0M224.4 138.6h0M231.0 138.6h0M237.6 138.6h0M244.2 138.6h0M250.8 138.6h0M257.4 138.6h0M264.0 138.6h0M270.6 138.6h0M277.2 138.6h0M283.8 138.6h0M290.4 138.6h0M297.0 138.6h0M303.6 138.6h0M310.2 138.6h0M85.8 145.2h0M92.4 145.2h0M99.0 145.2h0M105.6 145.2h0M112.2 145.2h0M118.8 145.2h0M125.4 145.2h0M132.0 145.2h0M138.6 145.2h0M145.2 145.2h0M151.8 145.2h0M158.4 145.2h0M165.0 145.2h0M171.6 145.2h0M178.2 145.2h0M184.8 145.2h0M191.4 145.2h0M198.0 145.2h0M204.6 145.2h0M211.2 145.2h0M217.8 145.2h0M224.4 145.2h0M231.0 145.2h0M237.6 145.2h0M244.2 145.2h0M250.8 145.2h0M257.4 145.2h0M264.0 145.2h0M270.6 145.2h0M277.2 145.2h0M283.8 145.2h0M290.4 145.2h0M297.0 145.2h0M303.6 145.2h0M310.2 145.2h0M85.8 151.8h0M92.4 151.8h0M99.0 151.8h0M105.6 151.8h0M112.2 151.8h0M118.8 151.8h0M125.4 151.8h0M132.0 151.8h0M138.6 151.8h0M145.2 151.8h0M151.8 151.8h0M158.4 151.8h0M165.0 151.8h0M171.6 151.8h0M178.2 151.8h0M184.8 151.8h0M191.4 151.8h0M198.0 151.8h0M204.6 151.8h0M211.2 151.8h0M217.8 151.8h0M224.4 151.8h0M231.0 151.8h0M237.6 151.8h0M244.2 151.8h0M250.8 151.8h0M257.4 151.8h0M264.0 151.8h0M270.6 151.8h0M277.2 151.8h0M283.8 151.8h0M290.4 151.8h0M297.0 151.8h0M303.6 151.8h0M79.2 158.4h0M85.8 158.4h0M92.4 158.4h0M99.0 158.4h0M105.6 158.4h0M112.2 158.4h0M118.8 158.4h0M125.4 158.4h0M132.0 158.4h0M138.6 158.4h0M145.2 158.4h0M151.8 158.4h0M158.4 158.4h0M165.0 158.4h0M171.6 158.4h0M178.2 158.4h0M184.8 158.4h0M191.4 158.4h0M198.0 158.4h0M204.6 158.4h0M211.2 158.4h0M217.8 158.4h0M224.4 158.4h0M231.0 158.4h0M237.6 158.4h0M244.2 158.4h0M250.8 158.4h0M257.4 158.4h0M264.0 158.4h0M270.6 158.4h0M277.2 158.4h0M283.8 158.4h0M290.4 158.4h0M297.0 158.4h0M422.4 158.4h0M72.6 165.0h0M79.2 165.0h0M85.8 165.0h0M92.4 165.0h0M99.0 165.0h0M105.6 165.0h0M112.2 165.0h0M118.8 165.0h0M125.4 165.0h0M132.0 165.0h0M138.6 165.0h0M145.2 165.0h0M151.8 165.0h0M158.4 165.0h0M165.0 165.0h0M171.6 165.0h0M178.2 165.0h0M184.8 165.0h0M191.4 165.0h0M198.0 165.0h0M204.6 165.0h0M211.2 165.0h0M217.8 165.0h0M224.4 165.0h0M231.0 165.0h0M237.6 165.0h0M244.2 165.0h0M250.8 165.0h0M257.4 165.0h0M264.0 165.0h0M270.6 165.0h0M277.2 165.0h0M283.8 165.0h0M290.4 165.0h0M376.2 165.0h0M382.8 165.0h0M389.4 165.0h0M415.8 165.0h0M422.4 165.0h0M72.6 171.6h0M79.2 171.6h0M85.8 171.6h0M92.4 171.6h0M99.0 171.6h0M105.6 171.6h0M112.2 171.6h0M118.8 171.6h0M125.4 171.6h0M132.0 171.6h0M138.6 171.6h0M145.2 171.6h0M151.8 171.6h0M158.4 171.6h0M165.0 171.6h0M171.6 171.6h0M178.2 171.6h0M184.8 171.6h0M191.4 171.6h0M198.0 171.6h0M204.6 171.6h0M211.2 171.6h0M217.8 171.6h0M224.4 171.6h0M231.0 171.6h0M237.6 171.6h0M244.2 171.6h0M250.8 171.6h0M257.4 171.6h0M264.0 171.6h0M270.6 171.6h0M277.2 171.6h0M283.8 171.6h0M369.6 171.6h0M376.2 171.6h0M382.8 171.6h0M389.4 171.6h0M396.0 171.6h0M72.6 178.2h0M79.2 178.2h0M85.8 178.2h0M92.4 178.2h0M99.0 178.2h0M105.6 178.2h0M112.2 178.2h0M118.8 178.2h0M125.4 178.2h0M132.0 178.2h0M138.6 178.2h0M145.2 178.2h0M151.8 178.2h0M158.4 178.2h0M165.0 178.2h0M171.6 178.2h0M178.2 178.2h0M184.8 178.2h0M191.4 178.2h0M198.0 178.2h0M204.6 178.2h0M211.2 178.2h0M217.8 178.2h0M224.4 178.2h0M231.0 178.2h0M237.6 178.2h0M244.2 178.2h0M250.8 178.2h0M257.4 178.2h0M264.0 178.2h0M270.6 178.2h0M277.2 178.2h0M283.8 178.2h0M369.6 178.2h0M376.2 178.2h0M382.8 178.2h0M389.4 178.2h0M396.0 178.2h0M72.6 184.8h0M79.2 184.8h0M85.8 184.8h0M92.4 184.8h0M99.0 184.8h0M105.6 184.8h0M112.2 184.8h0M118.8 184.8h0M125.4 184.8h0M132.0 184.8h0M138.6 184.8h0M145.2 184.8h0M151.8 184.8h0M158.4 184.8h0M165.0 184.8h0M171.6 184.8h0M178.2 184.8h0M184.8 184.8h0M191.4 184.8h0M198.0 184.8h0M204.6 184.8h0M211.2 184.8h0M217.8 184.8h0M224.4 184.8h0M231.0 184.8h0M237.6 184.8h0M244.2 184.8h0M250.8 184.8h0M257.4 184.8h0M264.0 184.8h0M270.6 184.8h0M277.2 184.8h0M283.8 184.8h0M376.2 184.8h0M382.8 184.8h0M389.4 184.8h0M396.0 184.8h0M79.2 191.4h0M85.8 191.4h0M92.4 191.4h0M99.0 191.4h0M105.6 191.4h0M112.2 191.4h0M118.8 191.4h0M125.4 191.4h0M132.0 191.4h0M138.6 191.4h0M145.2 191.4h0M151.8 191.4h0M158.4 191.4h0M165.0 191.4h0M171.6 191.4h0M178.2 191.4h0M184.8 191.4h0M191.4 191.4h0M198.0 191.4h0M204.6 191.4h0M211.2 191.4h0M217.8 191.4h0M224.4 191.4h0M231.0 191.4h0M237.6 191.4h0M244.2 191.4h0M250.8 191.4h0M257.4 191.4h0M264.0 191.4h0M270.6 191.4h0M277.2 191.4h0M283.8 191.4h0M79.2 198.0h0M85.8 198.0h0M92.4 198.0h0M99.0 198.0h0M105.6 198.0h0M112.2 198.0h0M118.8 198.0h0M125.4 198.0h0M132.0 198.0h0M138.6 198.0h0M145.2 198.0h0M151.8 198.0h0M158.4 198.0h0M165.0 198.0h0M171.6 198.0h0M178.2 198.0h0M184.8 198.0h0M191.4 198.0h0M198.0 198.0h0M204.6 198.0h0M211.2 198.0h0M217.8 198.0h0M224.4 198.0h0M231.0 198.0h0M237.6 198.0h0M244.2 198.0h0M250.8 198.0h0M257.4 198.0h0M264.0 198.0h0M270.6 198.0h0M277.2 198.0h0M283.8 198.0h0M290.4 198.0h0M336.6 198.0h0M79.2 204.6h0M85.8 204.6h0M92.4 204.6h0M99.0 204.6h0M105.6 204.6h0M112.2 204.6h0M118.8 204.6h0M125.4 204.6h0M132.0 204.6h0M138.6 204.6h0M145.2 204.6h0M151.8 204.6h0M158.4 204.6h0M165.0 204.6h0M171.6 204.6h0M178.2 204.6h0M184.8 204.6h0M191.4 204.6h0M198.0 204.6h0M204.6 204.6h0M211.2 204.6h0M217.8 204.6h0M224.4 204.6h0M231.0 204.6h0M237.6 204.6h0M244.2 204.6h0M250.8 204.6h0M257.4 204.6h0M264.0 204.6h0M270.6 204.6h0M277.2 204.6h0M283.8 204.6h0M290.4 204.6h0M297.0 204.6h0M336.6 204.6h0M79.2 211.2h0M85.8 211.2h0M92.4 211.2h0M99.0 211.2h0M105.6 211.2h0M112.2 211.2h0M118.8 211.2h0M125.4 211.2h0M132.0 211.2h0M138.6 211.2h0M145.2 211.2h0M151.8 211.2h0M158.4 211.2h0M165.0 211.2h0M171.6 211.2h0M178.2 211.2h0M184.8 211.2h0M191.4 211.2h0M198.0 211.2h0M204.6 211.2h0M211.2 211.2h0M217.8 211.2h0M224.4 211.2h0M231.0 211.2h0M237.6 211.2h0M244.2 211.2h0M250.8 211.2h0M257.4 211.2h0M264.0 211.2h0M270.6 211.2h0M277.2 211.2h0M283.8 211.2h0M290.4 211.2h0M297.0 211.2h0M336.6 211.2h0M72.6 217.8h0M79.2 217.8h0M85.8 217.8h0M92.4 217.8h0M99.0 217.8h0M105.6 217.8h0M112.2 217.8h0M118.8 217.8h0M125.4 217.8h0M132.0 217.8h0M138.6 217.8h0M145.2 217.8h0M151.8 217.8h0M158.4 217.8h0M165.0 217.8h0M171.6 217.8h0M178.2 217.8h0M184.8 217.8h0M191.4 217.8h0M198.0 217.8h0M204.6 217.8h0M211.2 217.8h0M217.8 217.8h0M224.4 217.8h0M231.0 217.8h0M237.6 217.8h0M244.2 217.8h0M250.8 217.8h0M257.4 217.8h0M264.0 217.8h0M270.6 217.8h0M277.2 217.8h0M283.8 217.8h0M290.4 217.8h0M72.6 224.4h0M79.2 224.4h0M85.8 224.4h0M92.4 224.4h0M99.0 224.4h0M105.6 224.4h0M112.2 224.4h0M118.8 224.4h0M125.4 224.4h0M132.0 224.4h0M138.6 224.4h0M145.2 224.4h0M151.8 224.4h0M158.4 224.4h0M165.0 224.4h0M171.6 224.4h0M178.2 224.4h0M184.8 224.4h0M191.4 224.4h0M198.0 224.4h0M204.6 224.4h0M211.2 224.4h0M217.8 224.4h0M224.4 224.4h0M231.0 224.4h0M237.6 224.4h0M244.2 224.4h0M250.8 224.4h0M257.4 224.4h0M264.0 224.4h0M270.6 224.4h0M277.2 224.4h0M79.2 231.0h0M85.8 231.0h0M92.4 231.0h0M99.0 231.0h0M105.6 231.0h0M112.2 231.0h0M118.8 231.0h0M125.4 231.0h0M132.0 231.0h0M138.6 231.0h0M145.2 231.0h0M151.8 231.0h0M158.4 231.0h0M165.0 231.0h0M171.6 231.0h0M178.2 231.0h0M184.8 231.0h0M191.4 231.0h0M198.0 231.0h0M204.6 231.0h0M211.2 231.0h0M217.8 231.0h0M224.4 231.0h0M231.0 231.0h0M237.6 231.0h0M244.2 231.0h0M250.8 231.0h0M257.4 231.0h0M264.0 231.0h0M270.6 231.0h0M79.2 237.6h0M85.8 237.6h0M92.4 237.6h0M99.0 237.6h0M105.6 237.6h0M112.2 237.6h0M118.8 237.6h0M125.4 237.6h0M132.0 237.6h0M138.6 237.6h0M145.2 237.6h0M151.8 237.6h0M158.4 237.6h0M165.0 237.6h0M171.6 237.6h0M178.2 237.6h0M184.8 237.6h0M191.4 237.6h0M198.0 237.6h0M204.6 237.6h0M211.2 237.6h0M217.8 237.6h0M224.4 237.6h0M231.0 237.6h0M237.6 237.6h0M244.2 237.6h0M250.8 237.6h0M257.4 237.6h0M264.0 237.6h0M270.6 237.6h0M79.2 244.2h0M85.8 244.2h0M92.4 244.2h0M99.0 244.2h0M105.6 244.2h0M112.2 244.2h0M118.8 244.2h0M125.4 244.2h0M132.0 244.2h0M138.6 244.2h0M145.2 244.2h0M151.8 244.2h0M158.4 244.2h0M165.0 244.2h0M171.6 244.2h0M178.2 244.2h0M184.8 244.2h0M191.4 244.2h0M198.0 244.2h0M204.6 244.2h0M211.2 244.2h0M217.8 244.2h0M224.4 244.2h0M231.0 244.2h0M237.6 244.2h0M244.2 244.2h0M250.8 244.2h0M257.4 244.2h0M264.0 244.2h0M270.6 244.2h0M72.6 250.8h0M79.2 250.8h0M85.8 250.8h0M92.4 250.8h0M99.0 250.8h0M105.6 250.8h0M112.2 250.8h0M118.8 250.8h0M125.4 250.8h0M132.0 250.8h0M138.6 250.8h0M145.2 250.8h0M151.8 250.8h0M158.4 250.8h0M165.0 250.8h0M171.6 250.8h0M178.2 250.8h0M184.8 250.8h0M191.4 250.8h0M198.0 250.8h0M204.6 250.8h0M211.2 250.8h0M217.8 250.8h0M224.4 250.8h0M231.0 250.8h0M237.6 250.8h0M244.2 250.8h0M250.8 250.8h0M257.4 250.8h0M264.0 250.8h0M270.6 250.8h0M66.0 257.4h0M72.6 257.4h0M79.2 257.4h0M85.8 257.4h0M92.4 257.4h0M99.0 257.4h0M105.6 257.4h0M112.2 257.4h0M118.8 257.4h0M125.4 257.4h0M132.0 257.4h0M138.6 257.4h0M145.2 257.4h0M151.8 257.4h0M158.4 257.4h0M165.0 257.4h0M171.6 257.4h0M178.2 257.4h0M184.8 257.4h0M191.4 257.4h0M198.0 257.4h0M204.6 257.4h0M211.2 257.4h0M217.8 257.4h0M224.4 257.4h0M231.0 257.4h0M237.6 257.4h0M244.2 257.4h0M250.8 257.4h0M257.4 257.4h0M264.0 257.4h0M66.0 264.0h0M72.6 264.0h0M79.2 264.0h0M85.8 264.0h0M92.4 264.0h0M99.0 264.0h0M105.6 264.0h0M112.2 264.0h0M118.8 264.0h0M125.4 264.0h0M132.0 264.0h0M138.6 264.0h0M145.2 264.0h0M151.8 264.0h0M158.4 264.0h0M165.0 264.0h0M171.6 264.0h0M178.2 264.0h0M184.8 264.0h0M191.4 264.0h0M198.0 264.0h0M204.6 264.0h0M211.2 264.0h0M217.8 264.0h0M224.4 264.0h0M231.0 264.0h0M237.6 264.0h0M244.2 264.0h0M72.6 270.6h0M79.2 270.6h0M85.8 270.6h0M92.4 270.6h0M99.0 270.6h0M105.6 270.6h0M112.2 270.6h0M118.8 270.6h0M125.4 270.6h0M132.0 270.6h0M138.6 270.6h0M145.2 270.6h0M151.8 270.6h0M158.4 270.6h0M165.0 270.6h0M171.6 270.6h0M178.2 270.6h0M184.8 270.6h0M191.4 270.6h0M198.0 270.6h0M204.6 270.6h0M211.2 270.6h0M217.8 270.6h0M224.4 270.6h0M231.0 270.6h0M237.6 270.6h0M92.4 277.2h0M99.0 277.2h0M105.6 277.2h0M112.2 277.2h0M118.8 277.2h0M125.4 277.2h0M132.0 277.2h0M138.6 277.2h0M145.2 277.2h0M151.8 277.2h0M158.4 277.2h0M165.0 277.2h0M171.6 277.2h0M178.2 277.2h0M184.8 277.2h0M191.4 277.2h0M198.0 277.2h0M204.6 277.2h0M211.2 277.2h0M217.8 277.2h0M224.4 277.2h0M231.0 277.2h0M237.6 277.2h0M99.0 283.8h0M105.6 283.8h0M112.2 283.8h0M118.8 283.8h0M125.4 283.8h0M132.0 283.8h0M138.6 283.8h0M145.2 283.8h0M151.8 283.8h0M158.4 283.8h0M165.0 283.8h0M171.6 283.8h0M178.2 283.8h0M184.8 283.8h0M191.4 283.8h0M198.0 283.8h0M204.6 283.8h0M211.2 283.8h0M217.8 283.8h0M224.4 283.8h0M231.0 283.8h0M99.0 290.4h0M105.6 290.4h0M112.2 290.4h0M118.8 290.4h0M125.4 290.4h0M132.0 290.4h0M138.6 290.4h0M145.2 290.4h0M151.8 290.4h0M158.4 290.4h0M165.0 290.4h0M171.6 290.4h0M178.2 290.4h0M184.8 290.4h0M191.4 290.4h0M198.0 290.4h0M204.6 290.4h0M211.2 290.4h0M217.8 290.4h0M224.4 290.4h0M231.0 290.4h0M105.6 297.0h0M112.2 297.0h0M118.8 297.0h0M125.4 297.0h0M132.0 297.0h0M138.6 297.0h0M145.2 297.0h0M151.8 297.0h0M105.6 303.6h0M112.2 303.6h0M118.8 303.6h0M125.4 303.6h0M132.0 303.6h0M138.6 303.6h0M112.2 310.2h0M118.8 310.2h0M125.4 310.2h0M132.0 310.2h0M118.8 316.8h0M125.4 316.8h0M223.2 363.8h0M229.8 363.8h0M223.2 370.4h0M229.8 370.4h0M236.4 370.4h0M223.2 377.0h0M229.8 377.0h0M31.8 390.2h0M38.4 390.2h0M210.0 390.2h0M31.8 396.8h0M38.4 396.8h0M203.4 396.8h0M210.0 396.8h0M216.6 396.8h0M31.8 403.4h0M38.4 403.4h0M91.2 403.4h0M97.8 403.4h0M203.4 403.4h0M210.0 403.4h0M216.6 403.4h0M84.6 410.0h0M91.2 410.0h0M97.8 410.0h0M104.4 410.0h0M203.4 410.0h0M210.0 410.0h0M216.6 410.0h0M78.0 416.6h0M84.6 416.6h0M91.2 416.6h0M97.8 416.6h0M104.4 416.6h0M111.0 416.6h0M203.4 416.6h0M210.0 416.6h0M216.6 416.6h0M64.8 423.2h0M84.6 423.2h0M91.2 423.2h0M97.8 423.2h0M104.4 423.2h0M203.4 423.2h0M210.0 423.2h0M216.6 423.2h0M64.8 429.8h0M91.2 429.8h0M97.8 429.8h0M130.8 429.8h0M137.4 429.8h0M144.0 429.8h0M210.0 429.8h0M130.8 436.4h0M137.4 436.4h0M144.0 436.4h0M130.8 443.0h0M137.4 443.0h0M144.0 443.0h0M25.2 449.6h0M31.8 449.6h0M137.4 449.6h0"/>
+            <rect class="map__inset" x="0.5" y="330.5" width="252" height="130"/>
+            <text class="map__small" x="10" y="349">Canarias</text>
+            <circle class="map__pulse" cx="272.7" cy="229.2" r="13"/>
+            <circle class="map__elche" cx="272.7" cy="229.2" r="6"/>
+            <path class="map__lead" d="M279 229.2h52"/>
+            <text class="map__label" x="336" y="233.5">Elche</text>
+          </svg>
+        </figure>
+      </div>
+    </div>
+    <div class="wrap grid">
+      <ul class="spain__stats">
+        <li data-reveal><p class="big"><span class="stat__plus">+</span><span data-count="2500">2.500</span></p><p>proyectos ejecutados</p></li>
+        <li data-reveal><p class="big"><span class="stat__plus">+</span><span data-count="50">50</span></p><p>provincias</p></li>
+        <li data-reveal><p class="big"><span class="stat__plus">+</span><span data-count="30">30</span></p><p>años de experiencia</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ PROYECTOS DESTACADOS ============ -->
+  <section class="sec" id="proyectos" aria-labelledby="proyectos-title">
+    <div class="wrap grid sec__top">
+      <p class="sec__label"><span class="sec__num">05</span><span>Proyectos</span></p>
+      <div class="sec__head">
+        <h2 id="proyectos-title" data-reveal>Proyectos destacados</h2>
+        <div class="sec__sub">
+          <p>Descubre algunos de nuestros cientos de proyectos ejecutados.</p>
+          <a class="link" href="#proyectos">Ver todos los proyectos <svg class="ico"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="index__head grid" aria-hidden="true">
+        <span class="index__h1">Nº</span>
+        <span class="index__h2">Proyecto</span>
+        <span class="index__h3">Ubicación / categoría</span>
+      </div>
+      <ol class="index">
+        <li><a class="proj grid" href="#proyectos">
+          <span class="proj__num">05.1</span>
+          <span class="proj__media"><img src="../assets/img/ELIG_02.jpg" alt="Fachada de ELIG Pinturas y Esmaltes con panel composite y cristal" width="800" height="600" loading="lazy"></span>
+          <span class="proj__name">ELIG Pinturas y Esmaltes</span>
+          <span class="proj__meta">Elche (Alicante) · Edificación industrial</span>
+          <svg class="ico proj__arrow"><use href="#i-arrow-ne"/></svg>
+        </a></li>
+        <li><a class="proj grid" href="#proyectos">
+          <span class="proj__num">05.2</span>
+          <span class="proj__media"><img src="../assets/img/zaragoza-05.jpg" alt="Estación de servicio Neumáticos Soledad de noche" width="800" height="390" loading="lazy"></span>
+          <span class="proj__name">Neumáticos Soledad</span>
+          <span class="proj__meta">Zaragoza · Estación de servicio</span>
+          <svg class="ico proj__arrow"><use href="#i-arrow-ne"/></svg>
+        </a></li>
+        <li><a class="proj grid" href="#proyectos">
+          <span class="proj__num">05.3</span>
+          <span class="proj__media"><img src="../assets/img/DULCESOL-03.jpg" alt="Celdas eléctricas de media tensión del proyecto Dulcesol" width="800" height="390" loading="lazy"></span>
+          <span class="proj__name">Dulcesol</span>
+          <span class="proj__meta">Instalaciones · Media tensión</span>
+          <svg class="ico proj__arrow"><use href="#i-arrow-ne"/></svg>
+        </a></li>
+        <li><a class="proj grid" href="#proyectos">
+          <span class="proj__num">05.4</span>
+          <span class="proj__media"><img src="../assets/img/SOLEDAD-TRITURADO-5.jpg" alt="Planta de triturado de neumáticos de Industrias del Neumático" width="800" height="390" loading="lazy"></span>
+          <span class="proj__name">Industrias del Neumático</span>
+          <span class="proj__meta">Industria · Planta de triturado</span>
+          <svg class="ico proj__arrow"><use href="#i-arrow-ne"/></svg>
+        </a></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ HISTORIA ============ -->
+  <section class="sec" id="historia" aria-labelledby="historia-title">
+    <div class="wrap grid sec__top">
+      <p class="sec__label"><span class="sec__num">06</span><span>Nuestra historia</span></p>
+      <div class="sec__head history">
+        <h2 id="historia-title" class="sr-only">Nuestra historia</h2>
+        <p class="history__year" aria-hidden="true" data-reveal>1992</p>
+        <div class="scale" aria-hidden="true">
+          <div class="scale__ticks"></div>
+          <div class="scale__labels"><span>1992</span><span>Más de 30 años</span><span>2026</span></div>
+        </div>
+        <div class="history__cols">
+          <p>Constituida en 1992, bajo la designación de Ingeniería Joaquín Rocamora, S.L., y posteriormente como S.L.P., la oficina principal se encuentra ubicada en Elche, en la provincia de Alicante, pero su ámbito de actuación abarca todo el ámbito nacional.</p>
+          <p>A lo largo de estos años, hemos evolucionado gracias a la confianza de nuestros clientes, al esfuerzo de nuestro equipo y a una firme apuesta por la calidad, la innovación y el compromiso con la sociedad.</p>
+        </div>
+        <a class="btn btn--line" href="#historia">Conoce nuestra historia <svg class="ico"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTO ============ -->
+  <section class="sec sec--last" id="contacto" aria-labelledby="contacto-title">
+    <div class="wrap grid sec__top">
+      <p class="sec__label"><span class="sec__num">07</span><span>Contacto</span></p>
+      <div class="sec__head contact">
+        <h2 id="contacto-title" data-reveal>¿Hablamos de tu próximo proyecto?</h2>
+        <p class="contact__intro">Cuéntanos tu idea y te ayudaremos a hacerla realidad con el respaldo de un equipo de más de 30 años de experiencia.</p>
+
+        <div class="contact__grid">
+          <table class="data">
+            <caption class="sr-only">Datos de contacto</caption>
+            <tbody>
+              <tr><th scope="row">Dirección</th><td>Avda. Universidad de Elche, 64 - AC&nbsp;Local&nbsp;3<br>03202 Elche (Alicante)</td></tr>
+              <tr><th scope="row">Teléfono</th><td><a href="tel:+34966615053">96 661 50 53</a></td></tr>
+              <tr><th scope="row">Móvil</th><td><a href="tel:+34628266939">628 266 939</a></td></tr>
+              <tr><th scope="row">Email</th><td><a href="mailto:info@ingenieriarocamora.com">info@<wbr>ingenieriarocamora.com</a></td></tr>
+              <tr><th scope="row">Comercial</th><td><a href="mailto:comercial@ingenieriarocamora.com">comercial@<wbr>ingenieriarocamora.com</a></td></tr>
+            </tbody>
+          </table>
+
+          <form class="form" data-demo>
+            <div class="field">
+              <label for="f-nombre">Nombre</label>
+              <input id="f-nombre" name="nombre" type="text" autocomplete="name" required>
+            </div>
+            <div class="form__pair">
+              <div class="field">
+                <label for="f-email">Email</label>
+                <input id="f-email" name="email" type="email" autocomplete="email" required>
+              </div>
+              <div class="field">
+                <label for="f-tel">Teléfono</label>
+                <input id="f-tel" name="telefono" type="tel" autocomplete="tel">
+              </div>
+            </div>
+            <div class="field">
+              <label for="f-msg">Mensaje</label>
+              <textarea id="f-msg" name="mensaje" rows="4"></textarea>
+            </div>
+            <div class="form__foot">
+              <label class="check">
+                <input type="checkbox" name="privacidad" required>
+                <span>Consiento la <a href="#contacto">Política de Privacidad</a></span>
+              </label>
+              <button class="btn btn--gold" type="submit">Enviar <svg class="ico"><use href="#i-arrow"/></svg></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top grid">
+      <div class="footer__brand">
+        <img src="../assets/img/logo-horizontal-blanco.png" alt="Joaquín Rocamora Ingeniería" width="1207" height="292" loading="lazy">
+        <p>Formada por profesionales de dilatada experiencia, enfoca sus esfuerzos y conocimientos en conseguir una sinergia perfecta con el cliente.</p>
+      </div>
+      <nav class="footer__col footer__col--a" aria-label="Nosotros">
+        <h3>Nosotros</h3>
+        <ul>
+          <li><a href="#empresa">Empresa</a></li>
+          <li><a href="#sectores">Sectores</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+        </ul>
+      </nav>
+      <nav class="footer__col footer__col--b" aria-label="Servicios">
+        <h3>Servicios</h3>
+        <ul>
+          <li><a href="#servicios">Edificación</a></li>
+          <li><a href="#servicios">Instalaciones</a></li>
+          <li><a href="#servicios">Medio ambiente</a></li>
+          <li><a href="#servicios">Energía</a></li>
+          <li><a href="#servicios">Actividades</a></li>
+          <li><a href="#servicios">Otros servicios</a></li>
+        </ul>
+      </nav>
+      <nav class="footer__col footer__col--c" aria-label="Otros enlaces">
+        <h3>Otros enlaces</h3>
+        <ul>
+          <li><a href="#top">Dossier general de prensa</a></li>
+          <li><a href="#top">Aviso legal</a></li>
+          <li><a href="#top">Política de Cookies</a></li>
+          <li><a href="#top">Política de Privacidad</a></li>
+        </ul>
+      </nav>
+      <div class="footer__col footer__col--d">
+        <h3>Contacto</h3>
+        <address>
+          Avda. Universidad de Elche, 64 - AC&nbsp;Local&nbsp;3<br>03202 Elche (Alicante)<br><br>
+          <a href="mailto:info@ingenieriarocamora.com">info@ingenieriarocamora.com</a><br>
+          <a href="mailto:comercial@ingenieriarocamora.com">comercial@ingenieriarocamora.com</a><br>
+          <a href="tel:+34966615053">+34 966 61 50 53</a>
+        </address>
+      </div>
+    </div>
+    <div class="footer__bottom grid">
+      <p class="footer__copy">© 2026 Ingeniería Joaquín Rocamora</p>
+      <p class="footer__note">Maqueta de propuesta de diseño</p>
+      <a class="footer__up" href="#top">Volver arriba <svg class="ico"><use href="#i-arrow-up"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<!-- Etiqueta de propuesta -->
+<aside class="proposal" aria-label="Navegación entre propuestas">
+  <span class="proposal__name"><i></i>Propuesta 4<span class="proposal__full">&nbsp;· Minimal suiza</span></span>
+  <span class="proposal__links">
+    <a href="../">← Opciones</a>
+    <a href="../propuesta-3/">P3</a>
+    <a href="../propuesta-5/">P5</a>
+  </span>
+</aside>
+
+</body>
+</html>
