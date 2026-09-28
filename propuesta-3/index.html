@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ingeniería Joaquín Rocamora · Propuesta 3 · Técnica con contraste</title>
+  <meta name="description" content="Ingeniería Joaquín Rocamora: soluciones de ingeniería para proyectos industriales y civiles desde 1992. Elche (Alicante).">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="../assets/js/main.js" defer></script>
+</head>
+<body>
+
+<!-- Iconos (estilo línea) -->
+<svg class="sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16"/><path d="m14 6 6 6-6 6"/></symbol>
+  <symbol id="i-building" viewBox="0 0 24 24"><path d="M2 21h20"/><path d="M4 21V9l6-4v16"/><path d="M10 21V3l10 4v14"/><path d="M14 10h2M14 14h2M14 18h2M6.5 12h1M6.5 16h1"/></symbol>
+  <symbol id="i-gauge" viewBox="0 0 24 24"><path d="M3.3 18a10 10 0 1 1 17.4 0"/><path d="m12 13 4.5-4.5"/><circle cx="12" cy="13" r="1.6"/><path d="M6 13h1.5M12 6.5V8M16.5 13H18"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2 2 4.2 2 8 0 5.5-4.8 10-10 10Z"/><path d="M2 21c0-3 1.9-5.4 5.1-6C9.5 14.5 12 13 13 12"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 4 14h8l-1 8 9-12h-8l1-8Z"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="m9 15 2 2 4-4"/></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24"><path d="M21 8a2 2 0 0 0-1-1.7l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.7l7 4a2 2 0 0 0 2 0l7-4a2 2 0 0 0 1-1.7Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></symbol>
+  <symbol id="i-mobile" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="1"/><path d="m22 6-10 7L2 6"/></symbol>
+</svg>
+
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<!-- ============ HEADER ============ -->
+<header class="header" data-header>
+  <div class="container header__inner">
+    <a class="header__logo" href="#top" aria-label="Ingeniería Joaquín Rocamora – inicio">
+      <img src="../assets/img/logo-horizontal-blanco.png" alt="Joaquín Rocamora Ingeniería" width="1207" height="292">
+    </a>
+    <nav class="nav" id="nav" data-nav aria-label="Principal">
+      <ul class="nav__list">
+        <li><a href="#empresa"><span class="nav__num">01</span>Empresa</a></li>
+        <li><a href="#servicios"><span class="nav__num">02</span>Servicios</a></li>
+        <li><a href="#sectores"><span class="nav__num">03</span>Sectores</a></li>
+        <li><a href="#proyectos"><span class="nav__num">04</span>Proyectos</a></li>
+        <li><a href="#contacto"><span class="nav__num">05</span>Contacto</a></li>
+      </ul>
+      <div class="nav__mobile-extra">
+        <a class="btn btn--gold" href="#contacto">Solicita información <svg class="ico"><use href="#i-arrow"/></svg></a>
+        <p class="nav__data">96 661 50 53 · info@ingenieriarocamora.com</p>
+      </div>
+    </nav>
+    <a class="btn btn--gold btn--sm header__cta" href="#contacto">Solicita información</a>
+    <button class="burger" type="button" data-nav-toggle aria-controls="nav" aria-expanded="false" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <img class="hero__img" src="../assets/img/direccion-obra.webp" alt="Técnicos revisando planos de proyecto con lápiz, calculadora y nivel" width="2000" height="1333">
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="container hero__body">
+      <p class="tag tag--light hero__tag">REF. IJR-1992<span class="tag__extra"><span>·</span> Ingeniería industrial y civil</span></p>
+      <h1 class="hero__title">Ingeniería que construye tu <em>futuro</em></h1>
+      <p class="hero__sub">Soluciones de ingeniería para proyectos industriales y civiles con rigor, experiencia y compromiso</p>
+      <div class="hero__actions">
+        <a class="btn btn--gold" href="#proyectos">Nuestros proyectos <svg class="ico"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn--line" href="#empresa">Conócenos</a>
+      </div>
+      <p class="hero__coords" aria-hidden="true">38°16′N · 0°41′O — ELCHE, ALICANTE</p>
+    </div>
+
+    <div class="hero__stats">
+      <div class="container">
+        <ul class="stats">
+          <li class="stat">
+            <span class="stat__ref">01</span>
+            <span class="stat__num"><i>+</i><span data-count="30">30</span></span>
+            <span class="stat__label">años de trayectoria</span>
+          </li>
+          <li class="stat">
+            <span class="stat__ref">02</span>
+            <span class="stat__num"><i>+</i><span data-count="2">2</span></span>
+            <span class="stat__label">millones de m² de superficie proyectada</span>
+          </li>
+          <li class="stat">
+            <span class="stat__ref">03</span>
+            <span class="stat__num"><i>+</i><span data-count="2500">2.500</span></span>
+            <span class="stat__label">proyectos ejecutados</span>
+          </li>
+          <li class="stat">
+            <span class="stat__ref">04</span>
+            <span class="stat__num"><span data-count="20">20</span></span>
+            <span class="stat__label">técnicos expertos</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICIOS ============ -->
+  <section class="section section--light" id="servicios">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <div>
+          <p class="eyebrow"><b>01</b> Servicios</p>
+          <h2 class="sec-title">Nuestros servicios</h2>
+        </div>
+        <div class="sec-head__aside">
+          <p class="lead">Un servicio integral adaptado a las necesidades de cada cliente, con un enfoque técnico, práctico y orientado a resultados.</p>
+          <a class="btn btn--navy" href="#servicios">Descubre todos nuestros servicios <svg class="ico"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+
+      <div class="services">
+        <a class="service" href="#servicios" data-reveal>
+          <span class="service__top"><span class="mono">01</span><span class="mono service__code">SRV–EDF</span></span>
+          <svg class="service__icon"><use href="#i-building"/></svg>
+          <h3>Edificación</h3>
+          <p>Naves industriales, edificios terciarios y dotacionales.</p>
+          <span class="service__more">Ver servicio <svg class="ico"><use href="#i-arrow"/></svg></span>
+        </a>
+        <a class="service" href="#servicios" data-reveal>
+          <span class="service__top"><span class="mono">02</span><span class="mono service__code">SRV–INS</span></span>
+          <svg class="service__icon"><use href="#i-gauge"/></svg>
+          <h3>Instalaciones</h3>
+          <p>Diseño y cálculo de instalaciones de alta eficiencia.</p>
+          <span class="service__more">Ver servicio <svg class="ico"><use href="#i-arrow"/></svg></span>
+        </a>
+        <a class="service" href="#servicios" data-reveal>
+          <span class="service__top"><span class="mono">03</span><span class="mono service__code">SRV–MAM</span></span>
+          <svg class="service__icon"><use href="#i-leaf"/></svg>
+          <h3>Medio ambiente</h3>
+          <p>Tramitación ambiental y sostenibilidad.</p>
+          <span class="service__more">Ver servicio <svg class="ico"><use href="#i-arrow"/></svg></span>
+        </a>
+        <a class="service" href="#servicios" data-reveal>
+          <span class="service__top"><span class="mono">04</span><span class="mono service__code">SRV–ENE</span></span>
+          <svg class="service__icon"><use href="#i-bolt"/></svg>
+          <h3>Energía</h3>
+          <p>Instalaciones orientadas al ahorro energético.</p>
+          <span class="service__more">Ver servicio <svg class="ico"><use href="#i-arrow"/></svg></span>
+        </a>
+        <a class="service" href="#servicios" data-reveal>
+          <span class="service__top"><span class="mono">05</span><span class="mono service__code">SRV–ACT</span></span>
+          <svg class="service__icon"><use href="#i-file"/></svg>
+          <h3>Actividades</h3>
+          <p>Redactamos y gestionamos los trámites para obtener tu licencia de apertura.</p>
+          <span class="service__more">Ver servicio <svg class="ico"><use href="#i-arrow"/></svg></span>
+        </a>
+        <a class="service" href="#servicios" data-reveal>
+          <span class="service__top"><span class="mono">06</span><span class="mono service__code">SRV–OTR</span></span>
+          <svg class="service__icon"><use href="#i-box"/></svg>
+          <h3>Otros servicios</h3>
+          <p>Cálculo estructural, infografías 3D, urbanizaciones… y más.</p>
+          <span class="service__more">Ver servicio <svg class="ico"><use href="#i-arrow"/></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTORES ============ -->
+  <section class="section section--dark section--anthracite" id="sectores">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <div>
+          <p class="eyebrow eyebrow--dark"><b>02</b> Sectores</p>
+          <h2 class="sec-title">Nuestros sectores</h2>
+        </div>
+        <div class="sec-head__aside">
+          <p class="lead">Aplicamos nuestro conocimiento en distintos ámbitos de la construcción, con soluciones técnicas eficientes y adaptadas a cada necesidad.</p>
+          <a class="btn btn--line" href="#sectores">Ver todos los sectores <svg class="ico"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+
+      <div class="sectors">
+        <article class="sector" data-reveal>
+          <div class="sector__media">
+            <img src="../assets/img/CARTONAJE_VEGA_BAJA1.webp" alt="Vista aérea de una gran nave industrial entre campos" loading="lazy" width="798" height="599">
+            <span class="sector__ref mono">SEC. 01</span>
+          </div>
+          <div class="sector__body">
+            <h3>Industria y logística</h3>
+            <p>Experiencia, conocimiento y dedicación son nuestra base en el sector…</p>
+            <p>Visión táctica y estratégica de la cadena logística, asegurando la eficacia y calidad…</p>
+            <a class="link-more" href="#sectores">Ver más <svg class="ico"><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
+        <article class="sector" data-reveal>
+          <div class="sector__media">
+            <img src="../assets/img/zaragoza-05.jpg" alt="Estación de servicio iluminada en una noche lluviosa" loading="lazy" width="800" height="390">
+            <span class="sector__ref mono">SEC. 02</span>
+          </div>
+          <div class="sector__body">
+            <h3>Talleres y estaciones de servicio</h3>
+            <p>Desarrollo completo de los proyectos y legalizaciones necesarias…</p>
+            <p>Gestión integral del diseño, proyecto, implantación y puesta en marcha…</p>
+            <a class="link-more" href="#sectores">Ver más <svg class="ico"><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
+        <article class="sector" data-reveal>
+          <div class="sector__media">
+            <img src="../assets/img/SOL_DAD_CENTRAL2.webp" alt="Edificio de oficinas acristalado de diseño moderno" loading="lazy" width="797" height="530">
+            <span class="sector__ref mono">SEC. 03</span>
+          </div>
+          <div class="sector__body">
+            <h3>Comercial e infraestructuras</h3>
+            <p>Diseños de edificios y espacios funcionales para optimizar la inversión…</p>
+            <p>Amplio desarrollo de infraestructuras necesarias para cualquier proyecto…</p>
+            <a class="link-more" href="#sectores">Ver más <svg class="ico"><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
+        <article class="sector" data-reveal>
+          <div class="sector__media">
+            <img src="../assets/img/UNION_SOLAR_COSTABLANCA3.webp" alt="Campo agrícola con nave de almacenamiento al fondo" loading="lazy" width="791" height="526">
+            <span class="sector__ref mono">SEC. 04</span>
+          </div>
+          <div class="sector__body">
+            <h3>Agroalimentario y energías renovables</h3>
+            <p>Desarrollo de plataformas logísticas frigoríficas e industrias agroalimentarias…</p>
+            <p>Proyectos enfocados hacia el ahorro energético e implantación de equipos de alta eficiencia…</p>
+            <a class="link-more" href="#sectores">Ver más <svg class="ico"><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SOBRE NOSOTROS ============ -->
+  <section class="section section--white" id="empresa">
+    <div class="container about">
+      <figure class="about__figure" data-reveal>
+        <div class="crop">
+          <img src="../assets/img/biomasa-damel-04.webp" alt="Instalación de caldera de biomasa con estructura metálica y tuberías" loading="lazy" width="794" height="593">
+        </div>
+        <div class="dim dim--h" aria-hidden="true"><span>Oficina técnica · Elche</span></div>
+        <figcaption class="mono">FIG. 01 — Instalación de biomasa</figcaption>
+      </figure>
+      <div class="about__text" data-reveal>
+        <p class="eyebrow"><b>03</b> Sobre nosotros</p>
+        <h2 class="sec-title">Un equipo comprometido con tu proyecto</h2>
+        <p class="lead">Combinamos experiencia, conocimiento técnico y una visión práctica para aportar soluciones reales a cada reto. Nuestro objetivo es generar valor en todas las fases del proyecto.</p>
+        <dl class="spec">
+          <div><dt>Fundación</dt><dd>1992</dd></div>
+          <div><dt>Sede</dt><dd>Elche (Alicante)</dd></div>
+          <div><dt>Ámbito</dt><dd>Nacional</dd></div>
+        </dl>
+        <a class="btn btn--navy" href="#empresa">Conoce nuestra empresa <svg class="ico"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROYECTOS EN TODA ESPAÑA ============ -->
+  <section class="section section--dark section--grid spain">
+    <div class="container spain__inner">
+      <div class="spain__text" data-reveal>
+        <p class="eyebrow eyebrow--dark"><b>04</b> Ámbito nacional</p>
+        <h2 class="sec-title">Proyectos en toda España</h2>
+        <p class="lead">Hemos desarrollado proyectos en numerosas provincias, acompañando a nuestros clientes allí donde lo necesitan.</p>
+        <ul class="spain__stats">
+          <li><span class="spain__num"><i>+</i><span data-count="2500">2.500</span></span><span class="spain__label">proyectos ejecutados</span></li>
+          <li><span class="spain__num"><i>+</i><span data-count="50">50</span></span><span class="spain__label">provincias</span></li>
+          <li><span class="spain__num"><i>+</i><span data-count="30">30</span></span><span class="spain__label">años de experiencia</span></li>
+        </ul>
+      </div>
+
+      <figure class="map" data-reveal>
+        <svg viewBox="-30 -20 560 420" role="img" aria-label="Mapa de España con puntos que señalan provincias con proyectos; sede en Elche">
+          <!-- marco con graduación -->
+          <g class="map__frame">
+            <rect x="-24" y="-14" width="548" height="408"/>
+          </g>
+          <g class="map__ticks">
+            <text x="-18" y="95">42°</text><text x="-18" y="187">40°</text><text x="-18" y="279">38°</text>
+            <text x="50" y="-4">8°O</text><text x="191" y="-4">4°O</text><text x="332" y="-4">0°</text><text x="470" y="-4">4°E</text>
+          </g>
+          <path class="map__dots" d="M54 18h0M63 18h0M72 18h0M81 18h0M36 27h0M45 27h0M54 27h0M63 27h0M72 27h0M81 27h0M90 27h0M99 27h0M108 27h0M117 27h0M126 27h0M135 27h0M144 27h0M153 27h0M162 27h0M171 27h0M189 27h0M198 27h0M207 27h0M18 36h0M27 36h0M36 36h0M45 36h0M54 36h0M63 36h0M72 36h0M81 36h0M90 36h0M99 36h0M108 36h0M117 36h0M126 36h0M135 36h0M144 36h0M153 36h0M162 36h0M171 36h0M180 36h0M189 36h0M198 36h0M207 36h0M216 36h0M225 36h0M234 36h0M243 36h0M252 36h0M261 36h0M270 36h0M279 36h0M18 45h0M27 45h0M36 45h0M45 45h0M54 45h0M63 45h0M72 45h0M81 45h0M90 45h0M99 45h0M108 45h0M117 45h0M126 45h0M135 45h0M144 45h0M153 45h0M162 45h0M171 45h0M180 45h0M189 45h0M198 45h0M207 45h0M216 45h0M225 45h0M234 45h0M243 45h0M252 45h0M261 45h0M270 45h0M279 45h0M288 45h0M18 54h0M27 54h0M36 54h0M45 54h0M54 54h0M63 54h0M72 54h0M81 54h0M90 54h0M99 54h0M108 54h0M117 54h0M126 54h0M135 54h0M144 54h0M153 54h0M162 54h0M171 54h0M180 54h0M189 54h0M198 54h0M207 54h0M216 54h0M225 54h0M234 54h0M243 54h0M252 54h0M261 54h0M270 54h0M279 54h0M288 54h0M297 54h0M306 54h0M360 54h0M27 63h0M36 63h0M45 63h0M54 63h0M63 63h0M72 63h0M81 63h0M90 63h0M99 63h0M108 63h0M117 63h0M126 63h0M135 63h0M144 63h0M153 63h0M162 63h0M171 63h0M180 63h0M189 63h0M198 63h0M207 63h0M216 63h0M225 63h0M234 63h0M243 63h0M252 63h0M261 63h0M270 63h0M279 63h0M288 63h0M297 63h0M306 63h0M315 63h0M324 63h0M333 63h0M342 63h0M351 63h0M360 63h0M369 63h0M378 63h0M27 72h0M36 72h0M45 72h0M54 72h0M63 72h0M72 72h0M81 72h0M90 72h0M99 72h0M108 72h0M117 72h0M126 72h0M135 72h0M144 72h0M153 72h0M162 72h0M171 72h0M180 72h0M189 72h0M198 72h0M207 72h0M216 72h0M225 72h0M234 72h0M243 72h0M252 72h0M261 72h0M270 72h0M279 72h0M288 72h0M297 72h0M306 72h0M315 72h0M324 72h0M333 72h0M342 72h0M351 72h0M360 72h0M369 72h0M378 72h0M387 72h0M396 72h0M405 72h0M27 81h0M36 81h0M45 81h0M54 81h0M63 81h0M72 81h0M81 81h0M90 81h0M99 81h0M108 81h0M117 81h0M126 81h0M135 81h0M144 81h0M153 81h0M162 81h0M171 81h0M180 81h0M189 81h0M198 81h0M207 81h0M216 81h0M225 81h0M234 81h0M243 81h0M252 81h0M261 81h0M270 81h0M279 81h0M288 81h0M297 81h0M306 81h0M315 81h0M324 81h0M333 81h0M342 81h0M351 81h0M360 81h0M369 81h0M378 81h0M387 81h0M396 81h0M405 81h0M414 81h0M423 81h0M432 81h0M441 81h0M450 81h0M27 90h0M36 90h0M45 90h0M54 90h0M63 90h0M72 90h0M81 90h0M90 90h0M99 90h0M108 90h0M117 90h0M126 90h0M135 90h0M144 90h0M153 90h0M162 90h0M171 90h0M180 90h0M189 90h0M198 90h0M207 90h0M216 90h0M225 90h0M234 90h0M243 90h0M252 90h0M261 90h0M270 90h0M279 90h0M288 90h0M297 90h0M306 90h0M315 90h0M324 90h0M333 90h0M342 90h0M351 90h0M360 90h0M369 90h0M378 90h0M387 90h0M396 90h0M405 90h0M414 90h0M423 90h0M432 90h0M441 90h0M450 90h0M117 99h0M126 99h0M135 99h0M144 99h0M153 99h0M162 99h0M171 99h0M180 99h0M189 99h0M198 99h0M207 99h0M216 99h0M225 99h0M234 99h0M243 99h0M252 99h0M261 99h0M270 99h0M279 99h0M288 99h0M297 99h0M306 99h0M315 99h0M324 99h0M333 99h0M342 99h0M351 99h0M360 99h0M369 99h0M378 99h0M387 99h0M396 99h0M405 99h0M414 99h0M423 99h0M432 99h0M441 99h0M126 108h0M135 108h0M144 108h0M153 108h0M162 108h0M171 108h0M180 108h0M189 108h0M198 108h0M207 108h0M216 108h0M225 108h0M234 108h0M243 108h0M252 108h0M261 108h0M270 108h0M279 108h0M288 108h0M297 108h0M306 108h0M315 108h0M324 108h0M333 108h0M342 108h0M351 108h0M360 108h0M369 108h0M378 108h0M387 108h0M396 108h0M405 108h0M414 108h0M423 108h0M432 108h0M117 117h0M126 117h0M135 117h0M144 117h0M153 117h0M162 117h0M171 117h0M180 117h0M189 117h0M198 117h0M207 117h0M216 117h0M225 117h0M234 117h0M243 117h0M252 117h0M261 117h0M270 117h0M279 117h0M288 117h0M297 117h0M306 117h0M315 117h0M324 117h0M333 117h0M342 117h0M351 117h0M360 117h0M369 117h0M378 117h0M387 117h0M396 117h0M405 117h0M414 117h0M423 117h0M117 126h0M126 126h0M135 126h0M144 126h0M153 126h0M162 126h0M171 126h0M180 126h0M189 126h0M198 126h0M207 126h0M216 126h0M225 126h0M234 126h0M243 126h0M252 126h0M261 126h0M270 126h0M279 126h0M288 126h0M297 126h0M306 126h0M315 126h0M324 126h0M333 126h0M342 126h0M351 126h0M360 126h0M369 126h0M378 126h0M387 126h0M396 126h0M405 126h0M108 135h0M117 135h0M126 135h0M135 135h0M144 135h0M153 135h0M162 135h0M171 135h0M180 135h0M189 135h0M198 135h0M207 135h0M216 135h0M225 135h0M234 135h0M243 135h0M252 135h0M261 135h0M270 135h0M279 135h0M288 135h0M297 135h0M306 135h0M315 135h0M324 135h0M333 135h0M342 135h0M351 135h0M360 135h0M369 135h0M99 144h0M108 144h0M117 144h0M126 144h0M135 144h0M144 144h0M153 144h0M162 144h0M171 144h0M180 144h0M189 144h0M198 144h0M207 144h0M216 144h0M225 144h0M234 144h0M243 144h0M252 144h0M261 144h0M270 144h0M279 144h0M288 144h0M297 144h0M306 144h0M315 144h0M324 144h0M333 144h0M342 144h0M351 144h0M360 144h0M369 144h0M99 153h0M108 153h0M117 153h0M126 153h0M135 153h0M144 153h0M153 153h0M162 153h0M171 153h0M180 153h0M189 153h0M198 153h0M207 153h0M216 153h0M225 153h0M234 153h0M243 153h0M252 153h0M261 153h0M270 153h0M279 153h0M288 153h0M297 153h0M306 153h0M315 153h0M324 153h0M333 153h0M342 153h0M351 153h0M360 153h0M99 162h0M108 162h0M117 162h0M126 162h0M135 162h0M144 162h0M153 162h0M162 162h0M171 162h0M180 162h0M189 162h0M198 162h0M207 162h0M216 162h0M225 162h0M234 162h0M243 162h0M252 162h0M261 162h0M270 162h0M279 162h0M288 162h0M297 162h0M306 162h0M315 162h0M324 162h0M333 162h0M342 162h0M351 162h0M99 171h0M108 171h0M117 171h0M126 171h0M135 171h0M144 171h0M153 171h0M162 171h0M171 171h0M180 171h0M189 171h0M198 171h0M207 171h0M216 171h0M225 171h0M234 171h0M243 171h0M252 171h0M261 171h0M270 171h0M279 171h0M288 171h0M297 171h0M306 171h0M315 171h0M324 171h0M333 171h0M342 171h0M99 180h0M108 180h0M117 180h0M126 180h0M135 180h0M144 180h0M153 180h0M162 180h0M171 180h0M180 180h0M189 180h0M198 180h0M207 180h0M216 180h0M225 180h0M234 180h0M243 180h0M252 180h0M261 180h0M270 180h0M279 180h0M288 180h0M297 180h0M306 180h0M315 180h0M324 180h0M333 180h0M342 180h0M99 189h0M108 189h0M117 189h0M126 189h0M135 189h0M144 189h0M153 189h0M162 189h0M171 189h0M180 189h0M189 189h0M198 189h0M207 189h0M216 189h0M225 189h0M234 189h0M243 189h0M252 189h0M261 189h0M270 189h0M279 189h0M288 189h0M297 189h0M306 189h0M315 189h0M324 189h0M333 189h0M99 198h0M108 198h0M117 198h0M126 198h0M135 198h0M144 198h0M153 198h0M162 198h0M171 198h0M180 198h0M189 198h0M198 198h0M207 198h0M216 198h0M225 198h0M234 198h0M243 198h0M252 198h0M261 198h0M270 198h0M279 198h0M288 198h0M297 198h0M306 198h0M315 198h0M324 198h0M81 207h0M90 207h0M99 207h0M108 207h0M117 207h0M126 207h0M135 207h0M144 207h0M153 207h0M162 207h0M171 207h0M180 207h0M189 207h0M198 207h0M207 207h0M216 207h0M225 207h0M234 207h0M243 207h0M252 207h0M261 207h0M270 207h0M279 207h0M288 207h0M297 207h0M306 207h0M315 207h0M324 207h0M81 216h0M90 216h0M99 216h0M108 216h0M117 216h0M126 216h0M135 216h0M144 216h0M153 216h0M162 216h0M171 216h0M180 216h0M189 216h0M198 216h0M207 216h0M216 216h0M225 216h0M234 216h0M243 216h0M252 216h0M261 216h0M270 216h0M279 216h0M288 216h0M297 216h0M306 216h0M315 216h0M324 216h0M90 225h0M99 225h0M108 225h0M117 225h0M126 225h0M135 225h0M144 225h0M153 225h0M162 225h0M171 225h0M180 225h0M189 225h0M198 225h0M207 225h0M216 225h0M225 225h0M234 225h0M243 225h0M252 225h0M261 225h0M270 225h0M279 225h0M288 225h0M297 225h0M306 225h0M315 225h0M324 225h0M99 234h0M108 234h0M117 234h0M126 234h0M135 234h0M144 234h0M153 234h0M162 234h0M171 234h0M180 234h0M189 234h0M198 234h0M207 234h0M216 234h0M225 234h0M234 234h0M243 234h0M252 234h0M261 234h0M270 234h0M279 234h0M288 234h0M297 234h0M306 234h0M315 234h0M324 234h0M333 234h0M90 243h0M99 243h0M108 243h0M117 243h0M126 243h0M135 243h0M144 243h0M153 243h0M162 243h0M171 243h0M180 243h0M189 243h0M198 243h0M207 243h0M216 243h0M225 243h0M234 243h0M243 243h0M252 243h0M261 243h0M270 243h0M279 243h0M288 243h0M297 243h0M306 243h0M315 243h0M324 243h0M333 243h0M342 243h0M90 252h0M99 252h0M108 252h0M117 252h0M126 252h0M135 252h0M144 252h0M153 252h0M162 252h0M171 252h0M180 252h0M189 252h0M198 252h0M207 252h0M216 252h0M225 252h0M234 252h0M243 252h0M252 252h0M261 252h0M270 252h0M279 252h0M288 252h0M297 252h0M306 252h0M315 252h0M324 252h0M90 261h0M99 261h0M108 261h0M117 261h0M126 261h0M135 261h0M144 261h0M153 261h0M162 261h0M171 261h0M180 261h0M189 261h0M198 261h0M207 261h0M216 261h0M225 261h0M234 261h0M243 261h0M252 261h0M261 261h0M270 261h0M279 261h0M288 261h0M297 261h0M306 261h0M315 261h0M90 270h0M99 270h0M108 270h0M117 270h0M126 270h0M135 270h0M144 270h0M153 270h0M162 270h0M171 270h0M180 270h0M189 270h0M198 270h0M207 270h0M216 270h0M225 270h0M234 270h0M243 270h0M252 270h0M261 270h0M270 270h0M279 270h0M288 270h0M297 270h0M306 270h0M315 270h0M81 279h0M90 279h0M99 279h0M108 279h0M117 279h0M126 279h0M135 279h0M144 279h0M153 279h0M162 279h0M171 279h0M180 279h0M189 279h0M198 279h0M207 279h0M216 279h0M225 279h0M234 279h0M243 279h0M252 279h0M261 279h0M270 279h0M279 279h0M288 279h0M297 279h0M306 279h0M81 288h0M90 288h0M99 288h0M108 288h0M117 288h0M126 288h0M135 288h0M144 288h0M153 288h0M162 288h0M171 288h0M180 288h0M189 288h0M198 288h0M207 288h0M216 288h0M225 288h0M234 288h0M243 288h0M252 288h0M261 288h0M270 288h0M279 288h0M288 288h0M297 288h0M306 288h0M81 297h0M90 297h0M99 297h0M108 297h0M117 297h0M126 297h0M135 297h0M144 297h0M153 297h0M162 297h0M171 297h0M180 297h0M189 297h0M198 297h0M207 297h0M216 297h0M225 297h0M234 297h0M243 297h0M252 297h0M261 297h0M270 297h0M279 297h0M288 297h0M81 306h0M90 306h0M99 306h0M108 306h0M117 306h0M126 306h0M135 306h0M144 306h0M153 306h0M162 306h0M171 306h0M180 306h0M189 306h0M198 306h0M207 306h0M216 306h0M225 306h0M234 306h0M243 306h0M252 306h0M261 306h0M270 306h0M279 306h0M99 315h0M108 315h0M117 315h0M126 315h0M135 315h0M144 315h0M153 315h0M162 315h0M171 315h0M180 315h0M189 315h0M198 315h0M207 315h0M216 315h0M225 315h0M234 315h0M243 315h0M252 315h0M261 315h0M270 315h0M108 324h0M117 324h0M126 324h0M135 324h0M144 324h0M153 324h0M162 324h0M171 324h0M180 324h0M189 324h0M198 324h0M207 324h0M216 324h0M225 324h0M234 324h0M243 324h0M252 324h0M261 324h0M270 324h0M117 333h0M126 333h0M135 333h0M144 333h0M153 333h0M162 333h0M171 333h0M180 333h0M189 333h0M198 333h0M207 333h0M216 333h0M225 333h0M234 333h0M243 333h0M252 333h0M261 333h0M126 342h0M135 342h0M144 342h0M153 342h0M162 342h0M171 342h0M126 351h0M135 351h0M144 351h0M153 351h0M135 360h0M144 360h0M477 180h0M486 180h0M432 189h0M441 189h0M450 189h0M477 189h0M486 189h0M432 198h0M441 198h0M450 198h0M459 198h0M432 207h0M441 207h0M450 207h0M459 207h0M441 216h0M387 225h0M387 234h0"/>
+          <!-- Canarias -->
+          <rect class="map__inset" x="360" y="310" width="142" height="68"/>
+          <text class="map__inset-label" x="366" y="374">CANARIAS</text>
+          <path class="map__dots" d="M488 321h0M371 339h0M479 339h0M398 348h0M407 348h0M416 348h0M479 348h0M389 357h0M434 357h0M479 357h0M434 366h0"/>
+          <!-- provincias con proyectos -->
+          <path class="map__gold" d="M306 108h0M207 162h0M324 207h0M297 279h0M414 117h0M126 306h0M234 36h0M171 108h0M180 333h0M270 234h0M45 27h0M252 333h0M360 108h0M198 189h0M279 54h0M99 234h0M333 180h0M416 348h0M479 339h0"/>
+          <!-- sede -->
+          <g class="map__hq">
+            <circle class="map__pulse" cx="315" cy="261" r="14"/>
+            <circle cx="315" cy="261" r="5"/>
+            <path d="M324 261h70" class="map__leader"/>
+            <text x="398" y="258">ELCHE</text>
+            <text x="398" y="271" class="map__sub">SEDE CENTRAL</text>
+          </g>
+        </svg>
+        <figcaption class="map__legend mono">
+          <span><i class="dot dot--gold"></i>Provincias con proyectos</span>
+          <span><i class="dot dot--ring"></i>Sede central</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ PROYECTOS DESTACADOS ============ -->
+  <section class="section section--light" id="proyectos">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <div>
+          <p class="eyebrow"><b>05</b> Proyectos</p>
+          <h2 class="sec-title">Proyectos destacados</h2>
+        </div>
+        <div class="sec-head__aside">
+          <p class="lead">Descubre algunos de nuestros cientos de proyectos ejecutados.</p>
+          <a class="btn btn--navy" href="#proyectos">Ver todos los proyectos <svg class="ico"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="container projects-wrap">
+      <ul class="projects" aria-label="Proyectos destacados">
+        <li class="project" data-reveal>
+          <a href="#proyectos">
+            <div class="project__media"><img src="../assets/img/ELIG_02.jpg" alt="Fachada del edificio de ELIG Pinturas y Esmaltes con panel composite y cristal" loading="lazy" width="800" height="600"></div>
+            <div class="project__body">
+              <span class="project__ref mono">REF. P–01</span>
+              <h3>ELIG Pinturas y Esmaltes</h3>
+              <span class="project__meta mono">Edificación · Elche</span>
+            </div>
+          </a>
+        </li>
+        <li class="project" data-reveal>
+          <a href="#proyectos">
+            <div class="project__media"><img src="../assets/img/zaragoza-05.jpg" alt="Estación de servicio de Neumáticos Soledad en Zaragoza" loading="lazy" width="800" height="390"></div>
+            <div class="project__body">
+              <span class="project__ref mono">REF. P–02</span>
+              <h3>Neumáticos Soledad</h3>
+              <span class="project__meta mono">Estación de servicio · Zaragoza</span>
+            </div>
+          </a>
+        </li>
+        <li class="project" data-reveal>
+          <a href="#proyectos">
+            <div class="project__media"><img src="../assets/img/DULCESOL-03.jpg" alt="Celdas eléctricas de media tensión del proyecto Dulcesol" loading="lazy" width="800" height="390"></div>
+            <div class="project__body">
+              <span class="project__ref mono">REF. P–03</span>
+              <h3>Dulcesol</h3>
+              <span class="project__meta mono">Instalaciones · Media tensión</span>
+            </div>
+          </a>
+        </li>
+        <li class="project" data-reveal>
+          <a href="#proyectos">
+            <div class="project__media"><img src="../assets/img/SOLEDAD-TRITURADO-5.jpg" alt="Planta de triturado de neumáticos de Industrias del Neumático" loading="lazy" width="800" height="390"></div>
+            <div class="project__body">
+              <span class="project__ref mono">REF. P–04</span>
+              <h3>Industrias del Neumático</h3>
+              <span class="project__meta mono">Industria · Planta de triturado</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <p class="projects__hint mono" aria-hidden="true">Desliza <svg class="ico"><use href="#i-arrow"/></svg></p>
+    </div>
+  </section>
+
+  <!-- ============ HISTORIA ============ -->
+  <section class="section section--white history">
+    <div class="container history__inner">
+      <div class="history__year" data-reveal>
+        <p class="history__big" aria-hidden="true">1992</p>
+        <div class="dim dim--h dim--dark" aria-hidden="true">
+          <span>+30 años</span>
+        </div>
+        <div class="history__ends mono" aria-hidden="true"><span>1992</span><span>2026</span></div>
+      </div>
+      <div class="history__text" data-reveal>
+        <p class="eyebrow"><b>06</b> Desde 1992</p>
+        <h2 class="sec-title">Nuestra historia</h2>
+        <p>Constituida en 1992, bajo la designación de Ingeniería Joaquín Rocamora, S.L., y posteriormente como S.L.P., la oficina principal se encuentra ubicada en Elche, en la provincia de Alicante, pero su ámbito de actuación abarca todo el ámbito nacional.</p>
+        <p>A lo largo de estos años, hemos evolucionado gracias a la confianza de nuestros clientes, al esfuerzo de nuestro equipo y a una firme apuesta por la calidad, la innovación y el compromiso con la sociedad.</p>
+        <a class="btn btn--outline" href="#top">Conoce nuestra historia <svg class="ico"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTO ============ -->
+  <section class="section section--dark section--grid contact" id="contacto">
+    <div class="container contact__inner">
+      <div class="contact__info" data-reveal>
+        <p class="eyebrow eyebrow--dark"><b>07</b> Contacto</p>
+        <h2 class="sec-title">¿Hablamos de tu próximo proyecto?</h2>
+        <p class="lead">Cuéntanos tu idea y te ayudaremos a hacerla realidad con el respaldo de un equipo de más de 30 años de experiencia.</p>
+        <ul class="contact__list">
+          <li>
+            <svg class="ico"><use href="#i-pin"/></svg>
+            <div><span class="mono">Dirección</span>Avda. Universidad de Elche, 64 - AC Local 3<br>03202 Elche (Alicante)</div>
+          </li>
+          <li>
+            <svg class="ico"><use href="#i-phone"/></svg>
+            <div><span class="mono">Teléfono</span><a href="tel:+34966615053">96 661 50 53</a></div>
+          </li>
+          <li>
+            <svg class="ico"><use href="#i-mobile"/></svg>
+            <div><span class="mono">Móvil</span><a href="tel:+34628266939">628 266 939</a></div>
+          </li>
+          <li>
+            <svg class="ico"><use href="#i-mail"/></svg>
+            <div><span class="mono">Email</span><a href="mailto:info@ingenieriarocamora.com">info@ingenieriarocamora.com</a><br><a href="mailto:comercial@ingenieriarocamora.com">comercial@ingenieriarocamora.com</a></div>
+          </li>
+        </ul>
+      </div>
+
+      <form class="form" data-demo data-reveal>
+        <p class="form__head mono"><span>Formulario de contacto</span><span>F–01</span></p>
+        <div class="form__row">
+          <label class="field">
+            <span class="field__label">Nombre</span>
+            <input type="text" name="nombre" autocomplete="name" required>
+          </label>
+          <label class="field">
+            <span class="field__label">Teléfono</span>
+            <input type="tel" name="telefono" autocomplete="tel">
+          </label>
+        </div>
+        <label class="field">
+          <span class="field__label">Email</span>
+          <input type="email" name="email" autocomplete="email" required>
+        </label>
+        <label class="field">
+          <span class="field__label">Mensaje</span>
+          <textarea name="mensaje" rows="5" required></textarea>
+        </label>
+        <label class="check">
+          <input type="checkbox" name="privacidad" required>
+          <span class="check__box" aria-hidden="true"></span>
+          <span>Consiento la <a href="#contacto">Política de Privacidad</a></span>
+        </label>
+        <button class="btn btn--gold btn--block" type="submit">Enviar <svg class="ico"><use href="#i-arrow"/></svg></button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img src="../assets/img/logo-vertical-blanco.png" alt="Joaquín Rocamora Ingeniería" width="291" height="188" loading="lazy">
+        <p>Formada por profesionales de dilatada experiencia, enfoca sus esfuerzos y conocimientos en conseguir una sinergia perfecta con el cliente.</p>
+      </div>
+      <nav class="footer__col" aria-label="Nosotros">
+        <h3 class="mono">Nosotros</h3>
+        <ul>
+          <li><a href="#empresa">Empresa</a></li>
+          <li><a href="#sectores">Sectores</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+        </ul>
+      </nav>
+      <nav class="footer__col" aria-label="Servicios">
+        <h3 class="mono">Servicios</h3>
+        <ul>
+          <li><a href="#servicios">Edificación</a></li>
+          <li><a href="#servicios">Instalaciones</a></li>
+          <li><a href="#servicios">Medio ambiente</a></li>
+          <li><a href="#servicios">Energía</a></li>
+          <li><a href="#servicios">Actividades</a></li>
+          <li><a href="#servicios">Otros servicios</a></li>
+        </ul>
+      </nav>
+      <nav class="footer__col" aria-label="Otros enlaces">
+        <h3 class="mono">Otros enlaces</h3>
+        <ul>
+          <li><a href="#top">Dossier general de prensa</a></li>
+          <li><a href="#top">Aviso legal</a></li>
+          <li><a href="#top">Política de Cookies</a></li>
+          <li><a href="#top">Política de Privacidad</a></li>
+        </ul>
+      </nav>
+      <div class="footer__col">
+        <h3 class="mono">Contacto</h3>
+        <ul class="footer__contact">
+          <li>Avda. Universidad de Elche, 64 - AC Local 3, 03202 Elche (Alicante)</li>
+          <li><a href="mailto:info@ingenieriarocamora.com">info@ingenieriarocamora.com</a></li>
+          <li><a href="mailto:comercial@ingenieriarocamora.com">comercial@ingenieriarocamora.com</a></li>
+          <li><a href="tel:+34966615053">+34 966 61 50 53</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__block mono">
+      <span>© 2026 Ingeniería Joaquín Rocamora</span>
+      <span>Maqueta de propuesta de diseño</span>
+      <span>Elche · Alicante</span>
+      <span>Hoja 01/01</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Etiqueta de propuesta -->
+<aside class="proposal" aria-label="Navegación entre propuestas">
+  <span class="proposal__name"><i></i>Propuesta 3<span class="proposal__full">&nbsp;· Técnica con contraste</span></span>
+  <span class="proposal__links">
+    <a href="../">← Opciones</a>
+    <a href="../propuesta-1/">P1</a>
+    <a href="../propuesta-2/">P2</a>
+  </span>
+</aside>
+
+</body>
+</html>

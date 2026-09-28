@@ -29,8 +29,9 @@
   }
 
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // Separador de miles con punto también en cifras de 4 dígitos (2.500)
   var format = function (n) {
-    return n.toLocaleString('es-ES');
+    return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, '.');
   };
 
   // Contadores: <span data-count="2500">2.500</span>

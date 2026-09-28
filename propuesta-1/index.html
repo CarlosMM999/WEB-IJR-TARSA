@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ingeniería Joaquín Rocamora · Propuesta 1 · Corporativa luminosa</title>
+  <meta name="description" content="Ingeniería Joaquín Rocamora: soluciones de ingeniería para proyectos industriales y civiles desde 1992. Oficina en Elche, proyectos en toda España.">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="../assets/js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- Sprite de iconos (línea, estilo Lucide) -->
+  <svg xmlns="http://www.w3.org/2000/svg" class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></symbol>
+    <symbol id="i-mobile" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="m3 6.5 9 6.5 9-6.5"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V8l7-4 7 4v13"/><path d="M9 21v-5h6v5"/><path d="M9 10.5h.01M12 10.5h.01M15 10.5h.01"/></symbol>
+    <symbol id="i-plug" viewBox="0 0 24 24"><path d="M9 2v5M15 2v5"/><path d="M6 7h12v3.5a6 6 0 0 1-12 0Z"/><path d="M12 16.5V22"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2.5H6.5a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V8Z"/><path d="M14 2.5V8h5.5"/><path d="m9 15 2 2 4-4.5"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 2.5 9.5 5L12 12.5 2.5 7.5Z"/><path d="m2.5 12 9.5 5 9.5-5"/><path d="m2.5 16.5 9.5 5 9.5-5"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <!-- Barra superior -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <p class="topbar__note">Oficina principal en Elche · Proyectos en toda España</p>
+      <ul class="topbar__contact">
+        <li><a href="tel:+34966615053"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>96 661 50 53</a></li>
+        <li><a href="mailto:info@ingenieriarocamora.com"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>info@ingenieriarocamora.com</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Cabecera -->
+  <header class="header" data-header>
+    <div class="container header__inner">
+      <a class="header__logo" href="#top" aria-label="Ingeniería Joaquín Rocamora, inicio">
+        <img src="../assets/img/logo-horizontal-azul.png" alt="Joaquín Rocamora Ingeniería" width="1207" height="292">
+      </a>
+      <nav class="nav" id="menu" data-nav aria-label="Principal">
+        <ul class="nav__list">
+          <li><a href="#empresa">Empresa</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#sectores">Sectores</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <a class="btn btn--primary nav__cta" href="#contacto">Solicita información</a>
+        <div class="nav__mobile-contact">
+          <a href="tel:+34966615053"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>96 661 50 53</a>
+          <a href="mailto:info@ingenieriarocamora.com"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>info@ingenieriarocamora.com</a>
+        </div>
+      </nav>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- 1. Hero -->
+    <section class="hero" id="top">
+      <div class="container hero__grid">
+        <div class="hero__content" data-reveal>
+          <p class="tag"><span class="tag__mark" aria-hidden="true"></span>Desde 1992 · Elche</p>
+          <h1 class="hero__title">Ingeniería que construye <span class="hl">tu futuro</span></h1>
+          <p class="hero__lead">Soluciones de ingeniería para proyectos industriales y civiles con rigor, experiencia y compromiso</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--lg" href="#proyectos">Nuestros proyectos <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn--ghost btn--lg" href="#empresa">Conócenos</a>
+          </div>
+        </div>
+        <div class="hero__media">
+          <div class="hero__photo">
+            <img src="../assets/img/direccion-obra.webp" alt="Ingenieros revisando planos de proyecto con lápiz, calculadora y nivel" width="2000" height="1333" fetchpriority="high">
+          </div>
+          <span class="hero__dots" aria-hidden="true"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Cifras -->
+    <section class="stats" aria-label="Cifras de la empresa">
+      <div class="container">
+        <ul class="stats__card">
+          <li class="stat">
+            <p class="stat__num"><span class="plus">+</span><span data-count="30">30</span></p>
+            <p class="stat__label">años de trayectoria</p>
+          </li>
+          <li class="stat">
+            <p class="stat__num"><span class="plus">+</span><span data-count="2">2</span></p>
+            <p class="stat__label">millones de m² de superficie proyectada</p>
+          </li>
+          <li class="stat">
+            <p class="stat__num"><span class="plus">+</span><span data-count="2500">2.500</span></p>
+            <p class="stat__label">proyectos ejecutados</p>
+          </li>
+          <li class="stat">
+            <p class="stat__num"><span data-count="20">20</span></p>
+            <p class="stat__label">técnicos expertos</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 3. Servicios -->
+    <section class="section section--soft services" id="servicios">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <div class="section-head__title">
+            <p class="eyebrow">Qué hacemos</p>
+            <h2 class="h2">Nuestros servicios</h2>
+          </div>
+          <div class="section-head__aside">
+            <p>Un servicio integral adaptado a las necesidades de cada cliente, con un enfoque técnico, práctico y orientado a resultados.</p>
+          </div>
+        </header>
+
+        <ul class="services__grid">
+          <li class="service" data-reveal>
+            <span class="service__icon"><svg class="icon" aria-hidden="true"><use href="#i-building"/></svg></span>
+            <h3>Edificación</h3>
+            <p>Naves industriales, edificios terciarios y dotacionales.</p>
+          </li>
+          <li class="service" data-reveal>
+            <span class="service__icon"><svg class="icon" aria-hidden="true"><use href="#i-plug"/></svg></span>
+            <h3>Instalaciones</h3>
+            <p>Diseño y cálculo de instalaciones de alta eficiencia.</p>
+          </li>
+          <li class="service" data-reveal>
+            <span class="service__icon"><svg class="icon" aria-hidden="true"><use href="#i-leaf"/></svg></span>
+            <h3>Medio ambiente</h3>
+            <p>Tramitación ambiental y sostenibilidad.</p>
+          </li>
+          <li class="service" data-reveal>
+            <span class="service__icon"><svg class="icon" aria-hidden="true"><use href="#i-zap"/></svg></span>
+            <h3>Energía</h3>
+            <p>Instalaciones orientadas al ahorro energético.</p>
+          </li>
+          <li class="service" data-reveal>
+            <span class="service__icon"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg></span>
+            <h3>Actividades</h3>
+            <p>Redactamos y gestionamos los trámites para obtener tu licencia de apertura.</p>
+          </li>
+          <li class="service" data-reveal>
+            <span class="service__icon"><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg></span>
+            <h3>Otros servicios</h3>
+            <p>Cálculo estructural, infografías 3D, urbanizaciones… y más.</p>
+          </li>
+        </ul>
+
+        <div class="section-foot">
+          <a class="btn btn--outline" href="#servicios">Descubre todos nuestros servicios <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Sectores -->
+    <section class="section sectors" id="sectores">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <div class="section-head__title">
+            <p class="eyebrow">Dónde trabajamos</p>
+            <h2 class="h2">Nuestros sectores</h2>
+          </div>
+          <div class="section-head__aside">
+            <p>Aplicamos nuestro conocimiento en distintos ámbitos de la construcción, con soluciones técnicas eficientes y adaptadas a cada necesidad.</p>
+          </div>
+        </header>
+
+        <div class="sectors__grid">
+          <article class="sector" data-reveal>
+            <div class="sector__media">
+              <img src="../assets/img/CARTONAJE_VEGA_BAJA1.webp" alt="Vista aérea de una gran nave industrial rodeada de campos" width="798" height="599" loading="lazy">
+            </div>
+            <div class="sector__body">
+              <h3>Industria y logística</h3>
+              <p>Experiencia, conocimiento y dedicación son nuestra base en el sector…</p>
+              <p>Visión táctica y estratégica de la cadena logística, asegurando la eficacia y calidad…</p>
+              <a class="link-arrow" href="#sectores">Ver más <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg><span class="sr-only"> sobre Industria y logística</span></a>
+            </div>
+          </article>
+          <article class="sector" data-reveal>
+            <div class="sector__media">
+              <img src="../assets/img/zaragoza-05.jpg" alt="Estación de servicio iluminada en una noche lluviosa" width="800" height="390" loading="lazy">
+            </div>
+            <div class="sector__body">
+              <h3>Talleres y estaciones de servicio</h3>
+              <p>Desarrollo completo de los proyectos y legalizaciones necesarias…</p>
+              <p>Gestión integral del diseño, proyecto, implantación y puesta en marcha…</p>
+              <a class="link-arrow" href="#sectores">Ver más <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg><span class="sr-only"> sobre Talleres y estaciones de servicio</span></a>
+            </div>
+          </article>
+          <article class="sector" data-reveal>
+            <div class="sector__media">
+              <img src="../assets/img/SOL_DAD_CENTRAL2.webp" alt="Edificio de oficinas moderno con fachada acristalada" width="797" height="530" loading="lazy">
+            </div>
+            <div class="sector__body">
+              <h3>Comercial e infraestructuras</h3>
+              <p>Diseños de edificios y espacios funcionales para optimizar la inversión…</p>
+              <p>Amplio desarrollo de infraestructuras necesarias para cualquier proyecto…</p>
+              <a class="link-arrow" href="#sectores">Ver más <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg><span class="sr-only"> sobre Comercial e infraestructuras</span></a>
+            </div>
+          </article>
+          <article class="sector" data-reveal>
+            <div class="sector__media">
+              <img src="../assets/img/UNION_SOLAR_COSTABLANCA3.webp" alt="Campo de cultivo con una nave agrícola al fondo" width="791" height="526" loading="lazy">
+            </div>
+            <div class="sector__body">
+              <h3>Agroalimentario y energías renovables</h3>
+              <p>Desarrollo de plataformas logísticas frigoríficas e industrias agroalimentarias…</p>
+              <p>Proyectos enfocados hacia el ahorro energético e implantación de equipos de alta eficiencia…</p>
+              <a class="link-arrow" href="#sectores">Ver más <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg><span class="sr-only"> sobre Agroalimentario y energías renovables</span></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="section-foot">
+          <a class="btn btn--outline" href="#sectores">Ver todos los sectores <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Sobre nosotros -->
+    <section class="section section--soft about" id="empresa">
+      <div class="container about__grid">
+        <div class="about__media" data-reveal>
+          <div class="about__photo">
+            <img src="../assets/img/biomasa-damel-04.webp" alt="Instalación de caldera de biomasa con tuberías y estructura metálica" width="794" height="593" loading="lazy">
+          </div>
+          <div class="about__badge">
+            <img src="../assets/img/logo-simbolo.png" alt="" width="423" height="292">
+            <p><strong>+30 años</strong><span>de ingeniería en Elche</span></p>
+          </div>
+        </div>
+        <div class="about__content" data-reveal>
+          <p class="eyebrow">Sobre nosotros</p>
+          <h2 class="h2">Un equipo comprometido con tu proyecto</h2>
+          <p class="lead">Combinamos experiencia, conocimiento técnico y una visión práctica para aportar soluciones reales a cada reto. Nuestro objetivo es generar valor en todas las fases del proyecto.</p>
+          <ul class="checks">
+            <li>
+              <span class="checks__icon"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
+              <div><h3>Experiencia</h3><p>Más de 30 años y 2.500 proyectos ejecutados nos avalan.</p></div>
+            </li>
+            <li>
+              <span class="checks__icon"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
+              <div><h3>Conocimiento técnico</h3><p>Un equipo de 20 técnicos expertos en cada disciplina.</p></div>
+            </li>
+            <li>
+              <span class="checks__icon"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
+              <div><h3>Visión práctica</h3><p>Soluciones reales que generan valor en todas las fases.</p></div>
+            </li>
+          </ul>
+          <a class="btn btn--primary" href="#empresa">Conoce nuestra empresa <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Proyectos en toda España -->
+    <section class="spain" aria-labelledby="spain-title">
+      <div class="container spain__grid">
+        <div class="spain__content" data-reveal>
+          <p class="eyebrow eyebrow--light">Ámbito nacional</p>
+          <h2 class="h2" id="spain-title">Proyectos en toda España</h2>
+          <p class="spain__text">Hemos desarrollado proyectos en numerosas provincias, acompañando a nuestros clientes allí donde lo necesitan.</p>
+          <ul class="spain__stats">
+            <li><p class="spain__num">+<span data-count="2500">2.500</span></p><p>proyectos ejecutados</p></li>
+            <li><p class="spain__num">+<span data-count="50">50</span></p><p>provincias</p></li>
+            <li><p class="spain__num">+<span data-count="30">30</span></p><p>años de experiencia</p></li>
+          </ul>
+        </div>
+        <div class="spain__map" data-reveal>
+          <svg class="spain-map" viewBox="0 0 639 482" role="img" aria-labelledby="mapTitle"><title id="mapTitle">Mapa de España con puntos que representan provincias con proyectos</title><g class="spain-map__dots"><circle cx="177.1" cy="469.9" r="2.6"/><circle cx="192.1" cy="469.9" r="2.6"/><circle cx="169.6" cy="456.9" r="2.6"/><circle cx="184.6" cy="456.9" r="2.6"/><circle cx="199.6" cy="456.9" r="2.6"/><circle cx="162.1" cy="443.8" r="2.6"/><circle cx="177.1" cy="443.8" r="2.6"/><circle cx="192.1" cy="443.8" r="2.6"/><circle cx="207.1" cy="443.8" r="2.6"/><circle cx="222.1" cy="443.8" r="2.6"/><circle cx="154.6" cy="430.8" r="2.6"/><circle cx="169.6" cy="430.8" r="2.6"/><circle cx="184.6" cy="430.8" r="2.6"/><circle cx="199.6" cy="430.8" r="2.6"/><circle cx="214.6" cy="430.8" r="2.6"/><circle cx="229.6" cy="430.8" r="2.6"/><circle cx="244.6" cy="430.8" r="2.6"/><circle cx="259.6" cy="430.8" r="2.6"/><circle cx="274.6" cy="430.8" r="2.6"/><circle cx="289.6" cy="430.8" r="2.6"/><circle cx="304.6" cy="430.8" r="2.6"/><circle cx="319.6" cy="430.8" r="2.6"/><circle cx="334.6" cy="430.8" r="2.6"/><circle cx="132.1" cy="417.7" r="2.6"/><circle cx="147.1" cy="417.7" r="2.6"/><circle cx="162.1" cy="417.7" r="2.6"/><circle cx="177.1" cy="417.7" r="2.6"/><circle cx="192.1" cy="417.7" r="2.6"/><circle cx="207.1" cy="417.7" r="2.6"/><circle cx="222.1" cy="417.7" r="2.6"/><circle cx="237.1" cy="417.7" r="2.6"/><circle cx="252.1" cy="417.7" r="2.6"/><circle cx="267.1" cy="417.7" r="2.6"/><circle cx="282.1" cy="417.7" r="2.6"/><circle cx="297.1" cy="417.7" r="2.6"/><circle cx="312.1" cy="417.7" r="2.6"/><circle cx="327.1" cy="417.7" r="2.6"/><circle cx="342.1" cy="417.7" r="2.6"/><circle cx="109.6" cy="404.7" r="2.6"/><circle cx="124.6" cy="404.7" r="2.6"/><circle cx="139.6" cy="404.7" r="2.6"/><circle cx="154.6" cy="404.7" r="2.6"/><circle cx="169.6" cy="404.7" r="2.6"/><circle cx="184.6" cy="404.7" r="2.6"/><circle cx="199.6" cy="404.7" r="2.6"/><circle cx="214.6" cy="404.7" r="2.6"/><circle cx="229.6" cy="404.7" r="2.6"/><circle cx="244.6" cy="404.7" r="2.6"/><circle cx="259.6" cy="404.7" r="2.6"/><circle cx="274.6" cy="404.7" r="2.6"/><circle cx="289.6" cy="404.7" r="2.6"/><circle cx="304.6" cy="404.7" r="2.6"/><circle cx="319.6" cy="404.7" r="2.6"/><circle cx="334.6" cy="404.7" r="2.6"/><circle cx="349.6" cy="404.7" r="2.6"/><circle cx="102.1" cy="391.6" r="2.6"/><circle cx="117.1" cy="391.6" r="2.6"/><circle cx="132.1" cy="391.6" r="2.6"/><circle cx="147.1" cy="391.6" r="2.6"/><circle cx="162.1" cy="391.6" r="2.6"/><circle cx="177.1" cy="391.6" r="2.6"/><circle cx="192.1" cy="391.6" r="2.6"/><circle cx="207.1" cy="391.6" r="2.6"/><circle cx="222.1" cy="391.6" r="2.6"/><circle cx="237.1" cy="391.6" r="2.6"/><circle cx="252.1" cy="391.6" r="2.6"/><circle cx="267.1" cy="391.6" r="2.6"/><circle cx="282.1" cy="391.6" r="2.6"/><circle cx="297.1" cy="391.6" r="2.6"/><circle cx="312.1" cy="391.6" r="2.6"/><circle cx="327.1" cy="391.6" r="2.6"/><circle cx="342.1" cy="391.6" r="2.6"/><circle cx="357.1" cy="391.6" r="2.6"/><circle cx="372.1" cy="391.6" r="2.6"/><circle cx="109.6" cy="378.6" r="2.6"/><circle cx="124.6" cy="378.6" r="2.6"/><circle cx="139.6" cy="378.6" r="2.6"/><circle cx="154.6" cy="378.6" r="2.6"/><circle cx="169.6" cy="378.6" r="2.6"/><circle cx="184.6" cy="378.6" r="2.6"/><circle cx="199.6" cy="378.6" r="2.6"/><circle cx="214.6" cy="378.6" r="2.6"/><circle cx="229.6" cy="378.6" r="2.6"/><circle cx="244.6" cy="378.6" r="2.6"/><circle cx="259.6" cy="378.6" r="2.6"/><circle cx="274.6" cy="378.6" r="2.6"/><circle cx="289.6" cy="378.6" r="2.6"/><circle cx="304.6" cy="378.6" r="2.6"/><circle cx="319.6" cy="378.6" r="2.6"/><circle cx="334.6" cy="378.6" r="2.6"/><circle cx="349.6" cy="378.6" r="2.6"/><circle cx="364.6" cy="378.6" r="2.6"/><circle cx="379.6" cy="378.6" r="2.6"/><circle cx="394.6" cy="378.6" r="2.6"/><circle cx="117.1" cy="365.5" r="2.6"/><circle cx="132.1" cy="365.5" r="2.6"/><circle cx="147.1" cy="365.5" r="2.6"/><circle cx="162.1" cy="365.5" r="2.6"/><circle cx="177.1" cy="365.5" r="2.6"/><circle cx="192.1" cy="365.5" r="2.6"/><circle cx="207.1" cy="365.5" r="2.6"/><circle cx="222.1" cy="365.5" r="2.6"/><circle cx="237.1" cy="365.5" r="2.6"/><circle cx="252.1" cy="365.5" r="2.6"/><circle cx="267.1" cy="365.5" r="2.6"/><circle cx="282.1" cy="365.5" r="2.6"/><circle cx="297.1" cy="365.5" r="2.6"/><circle cx="312.1" cy="365.5" r="2.6"/><circle cx="327.1" cy="365.5" r="2.6"/><circle cx="342.1" cy="365.5" r="2.6"/><circle cx="357.1" cy="365.5" r="2.6"/><circle cx="372.1" cy="365.5" r="2.6"/><circle cx="387.1" cy="365.5" r="2.6"/><circle cx="402.1" cy="365.5" r="2.6"/><circle cx="124.6" cy="352.5" r="2.6"/><circle cx="139.6" cy="352.5" r="2.6"/><circle cx="154.6" cy="352.5" r="2.6"/><circle cx="169.6" cy="352.5" r="2.6"/><circle cx="184.6" cy="352.5" r="2.6"/><circle cx="199.6" cy="352.5" r="2.6"/><circle cx="214.6" cy="352.5" r="2.6"/><circle cx="229.6" cy="352.5" r="2.6"/><circle cx="244.6" cy="352.5" r="2.6"/><circle cx="259.6" cy="352.5" r="2.6"/><circle cx="274.6" cy="352.5" r="2.6"/><circle cx="289.6" cy="352.5" r="2.6"/><circle cx="304.6" cy="352.5" r="2.6"/><circle cx="319.6" cy="352.5" r="2.6"/><circle cx="334.6" cy="352.5" r="2.6"/><circle cx="349.6" cy="352.5" r="2.6"/><circle cx="364.6" cy="352.5" r="2.6"/><circle cx="379.6" cy="352.5" r="2.6"/><circle cx="394.6" cy="352.5" r="2.6"/><circle cx="409.6" cy="352.5" r="2.6"/><circle cx="117.1" cy="339.4" r="2.6"/><circle cx="132.1" cy="339.4" r="2.6"/><circle cx="147.1" cy="339.4" r="2.6"/><circle cx="162.1" cy="339.4" r="2.6"/><circle cx="177.1" cy="339.4" r="2.6"/><circle cx="192.1" cy="339.4" r="2.6"/><circle cx="207.1" cy="339.4" r="2.6"/><circle cx="222.1" cy="339.4" r="2.6"/><circle cx="237.1" cy="339.4" r="2.6"/><circle cx="252.1" cy="339.4" r="2.6"/><circle cx="267.1" cy="339.4" r="2.6"/><circle cx="282.1" cy="339.4" r="2.6"/><circle cx="297.1" cy="339.4" r="2.6"/><circle cx="312.1" cy="339.4" r="2.6"/><circle cx="327.1" cy="339.4" r="2.6"/><circle cx="342.1" cy="339.4" r="2.6"/><circle cx="357.1" cy="339.4" r="2.6"/><circle cx="372.1" cy="339.4" r="2.6"/><circle cx="387.1" cy="339.4" r="2.6"/><circle cx="402.1" cy="339.4" r="2.6"/><circle cx="417.1" cy="339.4" r="2.6"/><circle cx="109.6" cy="326.4" r="2.6"/><circle cx="124.6" cy="326.4" r="2.6"/><circle cx="139.6" cy="326.4" r="2.6"/><circle cx="154.6" cy="326.4" r="2.6"/><circle cx="169.6" cy="326.4" r="2.6"/><circle cx="184.6" cy="326.4" r="2.6"/><circle cx="199.6" cy="326.4" r="2.6"/><circle cx="214.6" cy="326.4" r="2.6"/><circle cx="229.6" cy="326.4" r="2.6"/><circle cx="244.6" cy="326.4" r="2.6"/><circle cx="259.6" cy="326.4" r="2.6"/><circle cx="274.6" cy="326.4" r="2.6"/><circle cx="289.6" cy="326.4" r="2.6"/><circle cx="304.6" cy="326.4" r="2.6"/><circle cx="319.6" cy="326.4" r="2.6"/><circle cx="334.6" cy="326.4" r="2.6"/><circle cx="349.6" cy="326.4" r="2.6"/><circle cx="364.6" cy="326.4" r="2.6"/><circle cx="379.6" cy="326.4" r="2.6"/><circle cx="394.6" cy="326.4" r="2.6"/><circle cx="409.6" cy="326.4" r="2.6"/><circle cx="424.6" cy="326.4" r="2.6"/><circle cx="117.1" cy="313.3" r="2.6"/><circle cx="132.1" cy="313.3" r="2.6"/><circle cx="147.1" cy="313.3" r="2.6"/><circle cx="162.1" cy="313.3" r="2.6"/><circle cx="177.1" cy="313.3" r="2.6"/><circle cx="192.1" cy="313.3" r="2.6"/><circle cx="207.1" cy="313.3" r="2.6"/><circle cx="222.1" cy="313.3" r="2.6"/><circle cx="237.1" cy="313.3" r="2.6"/><circle cx="252.1" cy="313.3" r="2.6"/><circle cx="267.1" cy="313.3" r="2.6"/><circle cx="282.1" cy="313.3" r="2.6"/><circle cx="297.1" cy="313.3" r="2.6"/><circle cx="312.1" cy="313.3" r="2.6"/><circle cx="327.1" cy="313.3" r="2.6"/><circle cx="342.1" cy="313.3" r="2.6"/><circle cx="357.1" cy="313.3" r="2.6"/><circle cx="372.1" cy="313.3" r="2.6"/><circle cx="387.1" cy="313.3" r="2.6"/><circle cx="402.1" cy="313.3" r="2.6"/><circle cx="417.1" cy="313.3" r="2.6"/><circle cx="432.1" cy="313.3" r="2.6"/><circle cx="447.1" cy="313.3" r="2.6"/><circle cx="124.6" cy="300.3" r="2.6"/><circle cx="139.6" cy="300.3" r="2.6"/><circle cx="154.6" cy="300.3" r="2.6"/><circle cx="169.6" cy="300.3" r="2.6"/><circle cx="184.6" cy="300.3" r="2.6"/><circle cx="199.6" cy="300.3" r="2.6"/><circle cx="214.6" cy="300.3" r="2.6"/><circle cx="229.6" cy="300.3" r="2.6"/><circle cx="244.6" cy="300.3" r="2.6"/><circle cx="259.6" cy="300.3" r="2.6"/><circle cx="274.6" cy="300.3" r="2.6"/><circle cx="289.6" cy="300.3" r="2.6"/><circle cx="304.6" cy="300.3" r="2.6"/><circle cx="319.6" cy="300.3" r="2.6"/><circle cx="334.6" cy="300.3" r="2.6"/><circle cx="349.6" cy="300.3" r="2.6"/><circle cx="364.6" cy="300.3" r="2.6"/><circle cx="379.6" cy="300.3" r="2.6"/><circle cx="394.6" cy="300.3" r="2.6"/><circle cx="409.6" cy="300.3" r="2.6"/><circle cx="424.6" cy="300.3" r="2.6"/><circle cx="439.6" cy="300.3" r="2.6"/><circle cx="499.6" cy="300.3" r="2.6"/><circle cx="514.6" cy="300.3" r="2.6"/><circle cx="117.1" cy="287.2" r="2.6"/><circle cx="132.1" cy="287.2" r="2.6"/><circle cx="147.1" cy="287.2" r="2.6"/><circle cx="162.1" cy="287.2" r="2.6"/><circle cx="177.1" cy="287.2" r="2.6"/><circle cx="192.1" cy="287.2" r="2.6"/><circle cx="207.1" cy="287.2" r="2.6"/><circle cx="222.1" cy="287.2" r="2.6"/><circle cx="237.1" cy="287.2" r="2.6"/><circle cx="252.1" cy="287.2" r="2.6"/><circle cx="267.1" cy="287.2" r="2.6"/><circle cx="282.1" cy="287.2" r="2.6"/><circle cx="297.1" cy="287.2" r="2.6"/><circle cx="312.1" cy="287.2" r="2.6"/><circle cx="327.1" cy="287.2" r="2.6"/><circle cx="342.1" cy="287.2" r="2.6"/><circle cx="357.1" cy="287.2" r="2.6"/><circle cx="372.1" cy="287.2" r="2.6"/><circle cx="387.1" cy="287.2" r="2.6"/><circle cx="402.1" cy="287.2" r="2.6"/><circle cx="417.1" cy="287.2" r="2.6"/><circle cx="109.6" cy="274.2" r="2.6"/><circle cx="124.6" cy="274.2" r="2.6"/><circle cx="139.6" cy="274.2" r="2.6"/><circle cx="154.6" cy="274.2" r="2.6"/><circle cx="169.6" cy="274.2" r="2.6"/><circle cx="184.6" cy="274.2" r="2.6"/><circle cx="199.6" cy="274.2" r="2.6"/><circle cx="214.6" cy="274.2" r="2.6"/><circle cx="229.6" cy="274.2" r="2.6"/><circle cx="244.6" cy="274.2" r="2.6"/><circle cx="259.6" cy="274.2" r="2.6"/><circle cx="274.6" cy="274.2" r="2.6"/><circle cx="289.6" cy="274.2" r="2.6"/><circle cx="304.6" cy="274.2" r="2.6"/><circle cx="319.6" cy="274.2" r="2.6"/><circle cx="334.6" cy="274.2" r="2.6"/><circle cx="349.6" cy="274.2" r="2.6"/><circle cx="364.6" cy="274.2" r="2.6"/><circle cx="379.6" cy="274.2" r="2.6"/><circle cx="394.6" cy="274.2" r="2.6"/><circle cx="409.6" cy="274.2" r="2.6"/><circle cx="424.6" cy="274.2" r="2.6"/><circle cx="574.6" cy="274.2" r="2.6"/><circle cx="589.6" cy="274.2" r="2.6"/><circle cx="117.1" cy="261.1" r="2.6"/><circle cx="132.1" cy="261.1" r="2.6"/><circle cx="147.1" cy="261.1" r="2.6"/><circle cx="162.1" cy="261.1" r="2.6"/><circle cx="177.1" cy="261.1" r="2.6"/><circle cx="192.1" cy="261.1" r="2.6"/><circle cx="207.1" cy="261.1" r="2.6"/><circle cx="222.1" cy="261.1" r="2.6"/><circle cx="237.1" cy="261.1" r="2.6"/><circle cx="252.1" cy="261.1" r="2.6"/><circle cx="267.1" cy="261.1" r="2.6"/><circle cx="282.1" cy="261.1" r="2.6"/><circle cx="297.1" cy="261.1" r="2.6"/><circle cx="312.1" cy="261.1" r="2.6"/><circle cx="327.1" cy="261.1" r="2.6"/><circle cx="342.1" cy="261.1" r="2.6"/><circle cx="357.1" cy="261.1" r="2.6"/><circle cx="372.1" cy="261.1" r="2.6"/><circle cx="387.1" cy="261.1" r="2.6"/><circle cx="402.1" cy="261.1" r="2.6"/><circle cx="417.1" cy="261.1" r="2.6"/><circle cx="567.1" cy="261.1" r="2.6"/><circle cx="582.1" cy="261.1" r="2.6"/><circle cx="597.1" cy="261.1" r="2.6"/><circle cx="124.6" cy="248.1" r="2.6"/><circle cx="139.6" cy="248.1" r="2.6"/><circle cx="154.6" cy="248.1" r="2.6"/><circle cx="169.6" cy="248.1" r="2.6"/><circle cx="184.6" cy="248.1" r="2.6"/><circle cx="199.6" cy="248.1" r="2.6"/><circle cx="214.6" cy="248.1" r="2.6"/><circle cx="229.6" cy="248.1" r="2.6"/><circle cx="244.6" cy="248.1" r="2.6"/><circle cx="259.6" cy="248.1" r="2.6"/><circle cx="274.6" cy="248.1" r="2.6"/><circle cx="289.6" cy="248.1" r="2.6"/><circle cx="304.6" cy="248.1" r="2.6"/><circle cx="319.6" cy="248.1" r="2.6"/><circle cx="334.6" cy="248.1" r="2.6"/><circle cx="349.6" cy="248.1" r="2.6"/><circle cx="364.6" cy="248.1" r="2.6"/><circle cx="379.6" cy="248.1" r="2.6"/><circle cx="394.6" cy="248.1" r="2.6"/><circle cx="409.6" cy="248.1" r="2.6"/><circle cx="424.6" cy="248.1" r="2.6"/><circle cx="574.6" cy="248.1" r="2.6"/><circle cx="132.1" cy="235.0" r="2.6"/><circle cx="147.1" cy="235.0" r="2.6"/><circle cx="162.1" cy="235.0" r="2.6"/><circle cx="177.1" cy="235.0" r="2.6"/><circle cx="192.1" cy="235.0" r="2.6"/><circle cx="207.1" cy="235.0" r="2.6"/><circle cx="222.1" cy="235.0" r="2.6"/><circle cx="237.1" cy="235.0" r="2.6"/><circle cx="252.1" cy="235.0" r="2.6"/><circle cx="267.1" cy="235.0" r="2.6"/><circle cx="282.1" cy="235.0" r="2.6"/><circle cx="297.1" cy="235.0" r="2.6"/><circle cx="312.1" cy="235.0" r="2.6"/><circle cx="327.1" cy="235.0" r="2.6"/><circle cx="342.1" cy="235.0" r="2.6"/><circle cx="357.1" cy="235.0" r="2.6"/><circle cx="372.1" cy="235.0" r="2.6"/><circle cx="387.1" cy="235.0" r="2.6"/><circle cx="402.1" cy="235.0" r="2.6"/><circle cx="417.1" cy="235.0" r="2.6"/><circle cx="432.1" cy="235.0" r="2.6"/><circle cx="627.1" cy="235.0" r="2.6"/><circle cx="139.6" cy="222.0" r="2.6"/><circle cx="154.6" cy="222.0" r="2.6"/><circle cx="169.6" cy="222.0" r="2.6"/><circle cx="184.6" cy="222.0" r="2.6"/><circle cx="199.6" cy="222.0" r="2.6"/><circle cx="214.6" cy="222.0" r="2.6"/><circle cx="229.6" cy="222.0" r="2.6"/><circle cx="244.6" cy="222.0" r="2.6"/><circle cx="259.6" cy="222.0" r="2.6"/><circle cx="274.6" cy="222.0" r="2.6"/><circle cx="289.6" cy="222.0" r="2.6"/><circle cx="304.6" cy="222.0" r="2.6"/><circle cx="319.6" cy="222.0" r="2.6"/><circle cx="334.6" cy="222.0" r="2.6"/><circle cx="349.6" cy="222.0" r="2.6"/><circle cx="364.6" cy="222.0" r="2.6"/><circle cx="379.6" cy="222.0" r="2.6"/><circle cx="394.6" cy="222.0" r="2.6"/><circle cx="409.6" cy="222.0" r="2.6"/><circle cx="424.6" cy="222.0" r="2.6"/><circle cx="439.6" cy="222.0" r="2.6"/><circle cx="454.6" cy="222.0" r="2.6"/><circle cx="132.1" cy="208.9" r="2.6"/><circle cx="147.1" cy="208.9" r="2.6"/><circle cx="162.1" cy="208.9" r="2.6"/><circle cx="177.1" cy="208.9" r="2.6"/><circle cx="192.1" cy="208.9" r="2.6"/><circle cx="207.1" cy="208.9" r="2.6"/><circle cx="222.1" cy="208.9" r="2.6"/><circle cx="237.1" cy="208.9" r="2.6"/><circle cx="252.1" cy="208.9" r="2.6"/><circle cx="267.1" cy="208.9" r="2.6"/><circle cx="282.1" cy="208.9" r="2.6"/><circle cx="297.1" cy="208.9" r="2.6"/><circle cx="312.1" cy="208.9" r="2.6"/><circle cx="327.1" cy="208.9" r="2.6"/><circle cx="342.1" cy="208.9" r="2.6"/><circle cx="357.1" cy="208.9" r="2.6"/><circle cx="372.1" cy="208.9" r="2.6"/><circle cx="387.1" cy="208.9" r="2.6"/><circle cx="402.1" cy="208.9" r="2.6"/><circle cx="417.1" cy="208.9" r="2.6"/><circle cx="432.1" cy="208.9" r="2.6"/><circle cx="447.1" cy="208.9" r="2.6"/><circle cx="462.1" cy="208.9" r="2.6"/><circle cx="139.6" cy="195.9" r="2.6"/><circle cx="154.6" cy="195.9" r="2.6"/><circle cx="169.6" cy="195.9" r="2.6"/><circle cx="184.6" cy="195.9" r="2.6"/><circle cx="199.6" cy="195.9" r="2.6"/><circle cx="214.6" cy="195.9" r="2.6"/><circle cx="229.6" cy="195.9" r="2.6"/><circle cx="244.6" cy="195.9" r="2.6"/><circle cx="259.6" cy="195.9" r="2.6"/><circle cx="274.6" cy="195.9" r="2.6"/><circle cx="289.6" cy="195.9" r="2.6"/><circle cx="304.6" cy="195.9" r="2.6"/><circle cx="319.6" cy="195.9" r="2.6"/><circle cx="334.6" cy="195.9" r="2.6"/><circle cx="349.6" cy="195.9" r="2.6"/><circle cx="364.6" cy="195.9" r="2.6"/><circle cx="379.6" cy="195.9" r="2.6"/><circle cx="394.6" cy="195.9" r="2.6"/><circle cx="409.6" cy="195.9" r="2.6"/><circle cx="424.6" cy="195.9" r="2.6"/><circle cx="439.6" cy="195.9" r="2.6"/><circle cx="454.6" cy="195.9" r="2.6"/><circle cx="469.6" cy="195.9" r="2.6"/><circle cx="132.1" cy="182.8" r="2.6"/><circle cx="147.1" cy="182.8" r="2.6"/><circle cx="162.1" cy="182.8" r="2.6"/><circle cx="177.1" cy="182.8" r="2.6"/><circle cx="192.1" cy="182.8" r="2.6"/><circle cx="207.1" cy="182.8" r="2.6"/><circle cx="222.1" cy="182.8" r="2.6"/><circle cx="237.1" cy="182.8" r="2.6"/><circle cx="252.1" cy="182.8" r="2.6"/><circle cx="267.1" cy="182.8" r="2.6"/><circle cx="282.1" cy="182.8" r="2.6"/><circle cx="297.1" cy="182.8" r="2.6"/><circle cx="312.1" cy="182.8" r="2.6"/><circle cx="327.1" cy="182.8" r="2.6"/><circle cx="342.1" cy="182.8" r="2.6"/><circle cx="357.1" cy="182.8" r="2.6"/><circle cx="372.1" cy="182.8" r="2.6"/><circle cx="387.1" cy="182.8" r="2.6"/><circle cx="402.1" cy="182.8" r="2.6"/><circle cx="417.1" cy="182.8" r="2.6"/><circle cx="432.1" cy="182.8" r="2.6"/><circle cx="447.1" cy="182.8" r="2.6"/><circle cx="462.1" cy="182.8" r="2.6"/><circle cx="477.1" cy="182.8" r="2.6"/><circle cx="139.6" cy="169.8" r="2.6"/><circle cx="154.6" cy="169.8" r="2.6"/><circle cx="169.6" cy="169.8" r="2.6"/><circle cx="184.6" cy="169.8" r="2.6"/><circle cx="199.6" cy="169.8" r="2.6"/><circle cx="214.6" cy="169.8" r="2.6"/><circle cx="229.6" cy="169.8" r="2.6"/><circle cx="244.6" cy="169.8" r="2.6"/><circle cx="259.6" cy="169.8" r="2.6"/><circle cx="274.6" cy="169.8" r="2.6"/><circle cx="289.6" cy="169.8" r="2.6"/><circle cx="304.6" cy="169.8" r="2.6"/><circle cx="319.6" cy="169.8" r="2.6"/><circle cx="334.6" cy="169.8" r="2.6"/><circle cx="349.6" cy="169.8" r="2.6"/><circle cx="364.6" cy="169.8" r="2.6"/><circle cx="379.6" cy="169.8" r="2.6"/><circle cx="394.6" cy="169.8" r="2.6"/><circle cx="409.6" cy="169.8" r="2.6"/><circle cx="424.6" cy="169.8" r="2.6"/><circle cx="439.6" cy="169.8" r="2.6"/><circle cx="454.6" cy="169.8" r="2.6"/><circle cx="469.6" cy="169.8" r="2.6"/><circle cx="484.6" cy="169.8" r="2.6"/><circle cx="499.6" cy="169.8" r="2.6"/><circle cx="147.1" cy="156.7" r="2.6"/><circle cx="162.1" cy="156.7" r="2.6"/><circle cx="177.1" cy="156.7" r="2.6"/><circle cx="192.1" cy="156.7" r="2.6"/><circle cx="207.1" cy="156.7" r="2.6"/><circle cx="222.1" cy="156.7" r="2.6"/><circle cx="237.1" cy="156.7" r="2.6"/><circle cx="252.1" cy="156.7" r="2.6"/><circle cx="267.1" cy="156.7" r="2.6"/><circle cx="282.1" cy="156.7" r="2.6"/><circle cx="297.1" cy="156.7" r="2.6"/><circle cx="312.1" cy="156.7" r="2.6"/><circle cx="327.1" cy="156.7" r="2.6"/><circle cx="342.1" cy="156.7" r="2.6"/><circle cx="357.1" cy="156.7" r="2.6"/><circle cx="372.1" cy="156.7" r="2.6"/><circle cx="387.1" cy="156.7" r="2.6"/><circle cx="402.1" cy="156.7" r="2.6"/><circle cx="417.1" cy="156.7" r="2.6"/><circle cx="432.1" cy="156.7" r="2.6"/><circle cx="447.1" cy="156.7" r="2.6"/><circle cx="462.1" cy="156.7" r="2.6"/><circle cx="477.1" cy="156.7" r="2.6"/><circle cx="492.1" cy="156.7" r="2.6"/><circle cx="507.1" cy="156.7" r="2.6"/><circle cx="522.1" cy="156.7" r="2.6"/><circle cx="537.1" cy="156.7" r="2.6"/><circle cx="169.6" cy="143.7" r="2.6"/><circle cx="184.6" cy="143.7" r="2.6"/><circle cx="199.6" cy="143.7" r="2.6"/><circle cx="214.6" cy="143.7" r="2.6"/><circle cx="229.6" cy="143.7" r="2.6"/><circle cx="244.6" cy="143.7" r="2.6"/><circle cx="259.6" cy="143.7" r="2.6"/><circle cx="274.6" cy="143.7" r="2.6"/><circle cx="289.6" cy="143.7" r="2.6"/><circle cx="304.6" cy="143.7" r="2.6"/><circle cx="319.6" cy="143.7" r="2.6"/><circle cx="334.6" cy="143.7" r="2.6"/><circle cx="349.6" cy="143.7" r="2.6"/><circle cx="364.6" cy="143.7" r="2.6"/><circle cx="379.6" cy="143.7" r="2.6"/><circle cx="394.6" cy="143.7" r="2.6"/><circle cx="409.6" cy="143.7" r="2.6"/><circle cx="424.6" cy="143.7" r="2.6"/><circle cx="439.6" cy="143.7" r="2.6"/><circle cx="454.6" cy="143.7" r="2.6"/><circle cx="469.6" cy="143.7" r="2.6"/><circle cx="484.6" cy="143.7" r="2.6"/><circle cx="499.6" cy="143.7" r="2.6"/><circle cx="514.6" cy="143.7" r="2.6"/><circle cx="529.6" cy="143.7" r="2.6"/><circle cx="544.6" cy="143.7" r="2.6"/><circle cx="559.6" cy="143.7" r="2.6"/><circle cx="147.1" cy="130.6" r="2.6"/><circle cx="162.1" cy="130.6" r="2.6"/><circle cx="177.1" cy="130.6" r="2.6"/><circle cx="192.1" cy="130.6" r="2.6"/><circle cx="207.1" cy="130.6" r="2.6"/><circle cx="222.1" cy="130.6" r="2.6"/><circle cx="237.1" cy="130.6" r="2.6"/><circle cx="252.1" cy="130.6" r="2.6"/><circle cx="267.1" cy="130.6" r="2.6"/><circle cx="282.1" cy="130.6" r="2.6"/><circle cx="297.1" cy="130.6" r="2.6"/><circle cx="312.1" cy="130.6" r="2.6"/><circle cx="327.1" cy="130.6" r="2.6"/><circle cx="342.1" cy="130.6" r="2.6"/><circle cx="357.1" cy="130.6" r="2.6"/><circle cx="372.1" cy="130.6" r="2.6"/><circle cx="387.1" cy="130.6" r="2.6"/><circle cx="402.1" cy="130.6" r="2.6"/><circle cx="417.1" cy="130.6" r="2.6"/><circle cx="432.1" cy="130.6" r="2.6"/><circle cx="447.1" cy="130.6" r="2.6"/><circle cx="462.1" cy="130.6" r="2.6"/><circle cx="477.1" cy="130.6" r="2.6"/><circle cx="492.1" cy="130.6" r="2.6"/><circle cx="507.1" cy="130.6" r="2.6"/><circle cx="522.1" cy="130.6" r="2.6"/><circle cx="537.1" cy="130.6" r="2.6"/><circle cx="552.1" cy="130.6" r="2.6"/><circle cx="567.1" cy="130.6" r="2.6"/><circle cx="94.6" cy="117.6" r="2.6"/><circle cx="109.6" cy="117.6" r="2.6"/><circle cx="124.6" cy="117.6" r="2.6"/><circle cx="139.6" cy="117.6" r="2.6"/><circle cx="154.6" cy="117.6" r="2.6"/><circle cx="169.6" cy="117.6" r="2.6"/><circle cx="184.6" cy="117.6" r="2.6"/><circle cx="199.6" cy="117.6" r="2.6"/><circle cx="214.6" cy="117.6" r="2.6"/><circle cx="229.6" cy="117.6" r="2.6"/><circle cx="244.6" cy="117.6" r="2.6"/><circle cx="259.6" cy="117.6" r="2.6"/><circle cx="274.6" cy="117.6" r="2.6"/><circle cx="289.6" cy="117.6" r="2.6"/><circle cx="304.6" cy="117.6" r="2.6"/><circle cx="319.6" cy="117.6" r="2.6"/><circle cx="334.6" cy="117.6" r="2.6"/><circle cx="349.6" cy="117.6" r="2.6"/><circle cx="364.6" cy="117.6" r="2.6"/><circle cx="379.6" cy="117.6" r="2.6"/><circle cx="394.6" cy="117.6" r="2.6"/><circle cx="409.6" cy="117.6" r="2.6"/><circle cx="424.6" cy="117.6" r="2.6"/><circle cx="439.6" cy="117.6" r="2.6"/><circle cx="454.6" cy="117.6" r="2.6"/><circle cx="469.6" cy="117.6" r="2.6"/><circle cx="484.6" cy="117.6" r="2.6"/><circle cx="499.6" cy="117.6" r="2.6"/><circle cx="514.6" cy="117.6" r="2.6"/><circle cx="529.6" cy="117.6" r="2.6"/><circle cx="544.6" cy="117.6" r="2.6"/><circle cx="559.6" cy="117.6" r="2.6"/><circle cx="574.6" cy="117.6" r="2.6"/><circle cx="42.1" cy="104.5" r="2.6"/><circle cx="57.1" cy="104.5" r="2.6"/><circle cx="72.1" cy="104.5" r="2.6"/><circle cx="87.1" cy="104.5" r="2.6"/><circle cx="102.1" cy="104.5" r="2.6"/><circle cx="117.1" cy="104.5" r="2.6"/><circle cx="132.1" cy="104.5" r="2.6"/><circle cx="147.1" cy="104.5" r="2.6"/><circle cx="162.1" cy="104.5" r="2.6"/><circle cx="177.1" cy="104.5" r="2.6"/><circle cx="192.1" cy="104.5" r="2.6"/><circle cx="207.1" cy="104.5" r="2.6"/><circle cx="222.1" cy="104.5" r="2.6"/><circle cx="237.1" cy="104.5" r="2.6"/><circle cx="252.1" cy="104.5" r="2.6"/><circle cx="267.1" cy="104.5" r="2.6"/><circle cx="282.1" cy="104.5" r="2.6"/><circle cx="297.1" cy="104.5" r="2.6"/><circle cx="312.1" cy="104.5" r="2.6"/><circle cx="327.1" cy="104.5" r="2.6"/><circle cx="342.1" cy="104.5" r="2.6"/><circle cx="357.1" cy="104.5" r="2.6"/><circle cx="372.1" cy="104.5" r="2.6"/><circle cx="387.1" cy="104.5" r="2.6"/><circle cx="402.1" cy="104.5" r="2.6"/><circle cx="417.1" cy="104.5" r="2.6"/><circle cx="432.1" cy="104.5" r="2.6"/><circle cx="447.1" cy="104.5" r="2.6"/><circle cx="462.1" cy="104.5" r="2.6"/><circle cx="477.1" cy="104.5" r="2.6"/><circle cx="492.1" cy="104.5" r="2.6"/><circle cx="507.1" cy="104.5" r="2.6"/><circle cx="522.1" cy="104.5" r="2.6"/><circle cx="537.1" cy="104.5" r="2.6"/><circle cx="552.1" cy="104.5" r="2.6"/><circle cx="567.1" cy="104.5" r="2.6"/><circle cx="582.1" cy="104.5" r="2.6"/><circle cx="34.6" cy="91.5" r="2.6"/><circle cx="49.6" cy="91.5" r="2.6"/><circle cx="64.6" cy="91.5" r="2.6"/><circle cx="79.6" cy="91.5" r="2.6"/><circle cx="94.6" cy="91.5" r="2.6"/><circle cx="109.6" cy="91.5" r="2.6"/><circle cx="124.6" cy="91.5" r="2.6"/><circle cx="139.6" cy="91.5" r="2.6"/><circle cx="154.6" cy="91.5" r="2.6"/><circle cx="169.6" cy="91.5" r="2.6"/><circle cx="184.6" cy="91.5" r="2.6"/><circle cx="199.6" cy="91.5" r="2.6"/><circle cx="214.6" cy="91.5" r="2.6"/><circle cx="229.6" cy="91.5" r="2.6"/><circle cx="244.6" cy="91.5" r="2.6"/><circle cx="259.6" cy="91.5" r="2.6"/><circle cx="274.6" cy="91.5" r="2.6"/><circle cx="289.6" cy="91.5" r="2.6"/><circle cx="304.6" cy="91.5" r="2.6"/><circle cx="319.6" cy="91.5" r="2.6"/><circle cx="334.6" cy="91.5" r="2.6"/><circle cx="349.6" cy="91.5" r="2.6"/><circle cx="364.6" cy="91.5" r="2.6"/><circle cx="379.6" cy="91.5" r="2.6"/><circle cx="394.6" cy="91.5" r="2.6"/><circle cx="409.6" cy="91.5" r="2.6"/><circle cx="424.6" cy="91.5" r="2.6"/><circle cx="439.6" cy="91.5" r="2.6"/><circle cx="454.6" cy="91.5" r="2.6"/><circle cx="469.6" cy="91.5" r="2.6"/><circle cx="484.6" cy="91.5" r="2.6"/><circle cx="499.6" cy="91.5" r="2.6"/><circle cx="514.6" cy="91.5" r="2.6"/><circle cx="529.6" cy="91.5" r="2.6"/><circle cx="27.1" cy="78.4" r="2.6"/><circle cx="42.1" cy="78.4" r="2.6"/><circle cx="57.1" cy="78.4" r="2.6"/><circle cx="72.1" cy="78.4" r="2.6"/><circle cx="87.1" cy="78.4" r="2.6"/><circle cx="102.1" cy="78.4" r="2.6"/><circle cx="117.1" cy="78.4" r="2.6"/><circle cx="132.1" cy="78.4" r="2.6"/><circle cx="147.1" cy="78.4" r="2.6"/><circle cx="162.1" cy="78.4" r="2.6"/><circle cx="177.1" cy="78.4" r="2.6"/><circle cx="192.1" cy="78.4" r="2.6"/><circle cx="207.1" cy="78.4" r="2.6"/><circle cx="222.1" cy="78.4" r="2.6"/><circle cx="237.1" cy="78.4" r="2.6"/><circle cx="252.1" cy="78.4" r="2.6"/><circle cx="267.1" cy="78.4" r="2.6"/><circle cx="282.1" cy="78.4" r="2.6"/><circle cx="297.1" cy="78.4" r="2.6"/><circle cx="312.1" cy="78.4" r="2.6"/><circle cx="327.1" cy="78.4" r="2.6"/><circle cx="342.1" cy="78.4" r="2.6"/><circle cx="357.1" cy="78.4" r="2.6"/><circle cx="372.1" cy="78.4" r="2.6"/><circle cx="387.1" cy="78.4" r="2.6"/><circle cx="402.1" cy="78.4" r="2.6"/><circle cx="417.1" cy="78.4" r="2.6"/><circle cx="432.1" cy="78.4" r="2.6"/><circle cx="447.1" cy="78.4" r="2.6"/><circle cx="462.1" cy="78.4" r="2.6"/><circle cx="477.1" cy="78.4" r="2.6"/><circle cx="19.6" cy="65.4" r="2.6"/><circle cx="34.6" cy="65.4" r="2.6"/><circle cx="49.6" cy="65.4" r="2.6"/><circle cx="64.6" cy="65.4" r="2.6"/><circle cx="79.6" cy="65.4" r="2.6"/><circle cx="94.6" cy="65.4" r="2.6"/><circle cx="109.6" cy="65.4" r="2.6"/><circle cx="124.6" cy="65.4" r="2.6"/><circle cx="139.6" cy="65.4" r="2.6"/><circle cx="154.6" cy="65.4" r="2.6"/><circle cx="169.6" cy="65.4" r="2.6"/><circle cx="184.6" cy="65.4" r="2.6"/><circle cx="199.6" cy="65.4" r="2.6"/><circle cx="214.6" cy="65.4" r="2.6"/><circle cx="229.6" cy="65.4" r="2.6"/><circle cx="244.6" cy="65.4" r="2.6"/><circle cx="259.6" cy="65.4" r="2.6"/><circle cx="274.6" cy="65.4" r="2.6"/><circle cx="289.6" cy="65.4" r="2.6"/><circle cx="304.6" cy="65.4" r="2.6"/><circle cx="319.6" cy="65.4" r="2.6"/><circle cx="334.6" cy="65.4" r="2.6"/><circle cx="349.6" cy="65.4" r="2.6"/><circle cx="364.6" cy="65.4" r="2.6"/><circle cx="379.6" cy="65.4" r="2.6"/><circle cx="394.6" cy="65.4" r="2.6"/><circle cx="27.1" cy="52.3" r="2.6"/><circle cx="42.1" cy="52.3" r="2.6"/><circle cx="57.1" cy="52.3" r="2.6"/><circle cx="72.1" cy="52.3" r="2.6"/><circle cx="87.1" cy="52.3" r="2.6"/><circle cx="102.1" cy="52.3" r="2.6"/><circle cx="117.1" cy="52.3" r="2.6"/><circle cx="132.1" cy="52.3" r="2.6"/><circle cx="147.1" cy="52.3" r="2.6"/><circle cx="162.1" cy="52.3" r="2.6"/><circle cx="177.1" cy="52.3" r="2.6"/><circle cx="192.1" cy="52.3" r="2.6"/><circle cx="207.1" cy="52.3" r="2.6"/><circle cx="222.1" cy="52.3" r="2.6"/><circle cx="237.1" cy="52.3" r="2.6"/><circle cx="252.1" cy="52.3" r="2.6"/><circle cx="267.1" cy="52.3" r="2.6"/><circle cx="282.1" cy="52.3" r="2.6"/><circle cx="297.1" cy="52.3" r="2.6"/><circle cx="312.1" cy="52.3" r="2.6"/><circle cx="327.1" cy="52.3" r="2.6"/><circle cx="342.1" cy="52.3" r="2.6"/><circle cx="357.1" cy="52.3" r="2.6"/><circle cx="372.1" cy="52.3" r="2.6"/><circle cx="34.6" cy="39.3" r="2.6"/><circle cx="49.6" cy="39.3" r="2.6"/><circle cx="64.6" cy="39.3" r="2.6"/><circle cx="79.6" cy="39.3" r="2.6"/><circle cx="94.6" cy="39.3" r="2.6"/><circle cx="109.6" cy="39.3" r="2.6"/><circle cx="124.6" cy="39.3" r="2.6"/><circle cx="139.6" cy="39.3" r="2.6"/><circle cx="154.6" cy="39.3" r="2.6"/><circle cx="169.6" cy="39.3" r="2.6"/><circle cx="184.6" cy="39.3" r="2.6"/><circle cx="199.6" cy="39.3" r="2.6"/><circle cx="214.6" cy="39.3" r="2.6"/><circle cx="229.6" cy="39.3" r="2.6"/><circle cx="244.6" cy="39.3" r="2.6"/><circle cx="259.6" cy="39.3" r="2.6"/><circle cx="274.6" cy="39.3" r="2.6"/><circle cx="289.6" cy="39.3" r="2.6"/><circle cx="304.6" cy="39.3" r="2.6"/><circle cx="319.6" cy="39.3" r="2.6"/><circle cx="334.6" cy="39.3" r="2.6"/><circle cx="349.6" cy="39.3" r="2.6"/><circle cx="57.1" cy="26.2" r="2.6"/><circle cx="72.1" cy="26.2" r="2.6"/><circle cx="87.1" cy="26.2" r="2.6"/><circle cx="102.1" cy="26.2" r="2.6"/><circle cx="117.1" cy="26.2" r="2.6"/><circle cx="132.1" cy="26.2" r="2.6"/><circle cx="147.1" cy="26.2" r="2.6"/><circle cx="162.1" cy="26.2" r="2.6"/><circle cx="177.1" cy="26.2" r="2.6"/><circle cx="192.1" cy="26.2" r="2.6"/><circle cx="207.1" cy="26.2" r="2.6"/></g><g class="spain-map__cities"><circle cx="271.2" cy="214.8" r="4.5"/><circle cx="541.0" cy="156.6" r="4.5"/><circle cx="423.8" cy="271.8" r="4.5"/><circle cx="166.4" cy="396.6" r="4.5"/><circle cx="400.8" cy="141.0" r="4.5"/><circle cx="389.3" cy="360.6" r="4.5"/><circle cx="306.6" cy="44.4" r="4.5"/><circle cx="224.3" cy="141.0" r="4.5"/><circle cx="238.1" cy="436.8" r="4.5"/><circle cx="54.7" cy="38.4" r="4.5"/><circle cx="355.8" cy="300.6" r="4.5"/><circle cx="275.8" cy="409.2" r="4.5"/><circle cx="256.5" cy="248.4" r="4.5"/><circle cx="365.9" cy="71.4" r="4.5"/><circle cx="120.9" cy="307.2" r="4.5"/><circle cx="172.4" cy="38.4" r="4.5"/><circle cx="438.9" cy="240.6" r="4.5"/><circle cx="469.7" cy="143.4" r="4.5"/><circle cx="328.2" cy="429.6" r="4.5"/><circle cx="563.0" cy="265.8" r="4.5"/><circle cx="181.1" cy="182.4" r="4.5"/><circle cx="221.5" cy="367.2" r="4.5"/><circle cx="271.2" cy="99.6" r="4.5"/></g><g class="spain-map__hq"><circle class="spain-map__ring" cx="409.1" cy="343.8" r="16"/><circle cx="409.1" cy="343.8" r="7.5"/><text x="431.1" y="348.8">Elche · Sede central</text></g></svg>
+          <ul class="spain__legend">
+            <li><span class="dot dot--hq" aria-hidden="true"></span>Sede central · Elche</li>
+            <li><span class="dot" aria-hidden="true"></span>Provincias con proyectos</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Proyectos destacados -->
+    <section class="section projects" id="proyectos">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <div class="section-head__title">
+            <p class="eyebrow">Nuestro trabajo</p>
+            <h2 class="h2">Proyectos destacados</h2>
+          </div>
+          <div class="section-head__aside">
+            <p>Descubre algunos de nuestros cientos de proyectos ejecutados.</p>
+            <a class="btn btn--outline" href="#proyectos">Ver todos los proyectos <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </header>
+
+        <div class="projects__grid">
+          <a class="project" href="#proyectos" data-reveal>
+            <div class="project__media">
+              <img src="../assets/img/ELIG_02.jpg" alt="Fachada de edificio con panel composite y cristal de ELIG Pinturas y Esmaltes" width="800" height="600" loading="lazy">
+              <span class="project__overlay"><span class="project__cta">Ver proyecto <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span></span>
+            </div>
+            <div class="project__body">
+              <h3>ELIG Pinturas y Esmaltes</h3>
+              <p class="project__meta"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Elche (Alicante)</p>
+            </div>
+          </a>
+          <a class="project" href="#proyectos" data-reveal>
+            <div class="project__media">
+              <img src="../assets/img/zaragoza-05.jpg" alt="Estación de servicio de Neumáticos Soledad en Zaragoza" width="800" height="390" loading="lazy">
+              <span class="project__overlay"><span class="project__cta">Ver proyecto <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span></span>
+            </div>
+            <div class="project__body">
+              <h3>Neumáticos Soledad</h3>
+              <p class="project__meta"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Zaragoza</p>
+            </div>
+          </a>
+          <a class="project" href="#proyectos" data-reveal>
+            <div class="project__media">
+              <img src="../assets/img/DULCESOL-03.jpg" alt="Celdas eléctricas de media tensión del proyecto Dulcesol" width="800" height="390" loading="lazy">
+              <span class="project__overlay"><span class="project__cta">Ver proyecto <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span></span>
+            </div>
+            <div class="project__body">
+              <h3>Dulcesol</h3>
+              <p class="project__meta"><svg class="icon" aria-hidden="true"><use href="#i-plug"/></svg>Instalaciones de media tensión</p>
+            </div>
+          </a>
+          <a class="project" href="#proyectos" data-reveal>
+            <div class="project__media">
+              <img src="../assets/img/SOLEDAD-TRITURADO-5.jpg" alt="Planta de triturado de neumáticos de Industrias del Neumático" width="800" height="390" loading="lazy">
+              <span class="project__overlay"><span class="project__cta">Ver proyecto <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span></span>
+            </div>
+            <div class="project__body">
+              <h3>Industrias del Neumático</h3>
+              <p class="project__meta"><svg class="icon" aria-hidden="true"><use href="#i-building"/></svg>Planta de triturado</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Nuestra historia -->
+    <section class="section section--soft history" aria-labelledby="history-title">
+      <div class="container history__grid">
+        <div class="history__content" data-reveal>
+          <p class="eyebrow">Nuestra historia</p>
+          <h2 class="h2" id="history-title">Tres décadas de trayectoria</h2>
+          <p>Constituida en 1992, bajo la designación de Ingeniería Joaquín Rocamora, S.L., y posteriormente como S.L.P., la oficina principal se encuentra ubicada en Elche, en la provincia de Alicante, pero su ámbito de actuación abarca todo el ámbito nacional.</p>
+          <p>A lo largo de estos años, hemos evolucionado gracias a la confianza de nuestros clientes, al esfuerzo de nuestro equipo y a una firme apuesta por la calidad, la innovación y el compromiso con la sociedad.</p>
+          <a class="btn btn--outline" href="#empresa">Conoce nuestra historia <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+        <ol class="timeline" data-reveal>
+          <li class="timeline__item">
+            <p class="timeline__year">1992</p>
+            <h3>Fundación en Elche</h3>
+            <p>Nace Ingeniería Joaquín Rocamora, S.L., con oficina principal en Elche (Alicante).</p>
+          </li>
+          <li class="timeline__item">
+            <p class="timeline__year">S.L.P.</p>
+            <h3>Sociedad profesional</h3>
+            <p>La firma se constituye posteriormente como Sociedad Limitada Profesional.</p>
+          </li>
+          <li class="timeline__item timeline__item--now">
+            <p class="timeline__year">Hoy</p>
+            <h3>+2.500 proyectos ejecutados</h3>
+            <p>Un equipo de 20 técnicos con actuación en todo el ámbito nacional.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 9. Contacto -->
+    <section class="section contact" id="contacto">
+      <div class="container">
+        <div class="contact__card" data-reveal>
+          <div class="contact__info">
+            <p class="eyebrow eyebrow--light">Contacto</p>
+            <h2 class="h2">¿Hablamos de tu próximo proyecto?</h2>
+            <p class="contact__text">Cuéntanos tu idea y te ayudaremos a hacerla realidad con el respaldo de un equipo de más de 30 años de experiencia.</p>
+            <ul class="contact__list">
+              <li>
+                <span class="contact__icon"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg></span>
+                <p><span class="contact__label">Dirección</span>Avda. Universidad de Elche, 64 - AC Local 3<br>03202 Elche (Alicante)</p>
+              </li>
+              <li>
+                <span class="contact__icon"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span>
+                <p><span class="contact__label">Teléfonos</span><a href="tel:+34966615053">Tel. 96 661 50 53</a><br><a href="tel:+34628266939">Móvil 628 266 939</a></p>
+              </li>
+              <li>
+                <span class="contact__icon"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></span>
+                <p><span class="contact__label">Email</span><a href="mailto:info@ingenieriarocamora.com">info@ingenieriarocamora.com</a><br><a href="mailto:comercial@ingenieriarocamora.com">comercial@ingenieriarocamora.com</a></p>
+              </li>
+            </ul>
+          </div>
+
+          <form class="form" data-demo aria-label="Formulario de contacto">
+            <h3 class="form__title">Envíanos tu consulta</h3>
+            <div class="form__row">
+              <div class="field">
+                <label for="f-nombre">Nombre</label>
+                <input id="f-nombre" name="nombre" type="text" autocomplete="name" placeholder="Tu nombre" required>
+              </div>
+              <div class="field">
+                <label for="f-telefono">Teléfono</label>
+                <input id="f-telefono" name="telefono" type="tel" autocomplete="tel" placeholder="600 000 000">
+              </div>
+            </div>
+            <div class="field">
+              <label for="f-email">Email</label>
+              <input id="f-email" name="email" type="email" autocomplete="email" placeholder="nombre@empresa.com" required>
+            </div>
+            <div class="field">
+              <label for="f-mensaje">Mensaje</label>
+              <textarea id="f-mensaje" name="mensaje" rows="5" placeholder="Cuéntanos brevemente tu proyecto"></textarea>
+            </div>
+            <label class="consent">
+              <input type="checkbox" name="privacidad" required>
+              <span>Consiento la <a href="#contacto">Política de Privacidad</a></span>
+            </label>
+            <button class="btn btn--primary btn--lg form__submit" type="submit">Enviar <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 10. Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="../assets/img/logo-horizontal-blanco.png" alt="Joaquín Rocamora Ingeniería" width="1207" height="292" loading="lazy">
+          <p>Formada por profesionales de dilatada experiencia, enfoca sus esfuerzos y conocimientos en conseguir una sinergia perfecta con el cliente.</p>
+        </div>
+        <nav class="footer__col" aria-label="Nosotros">
+          <h2>Nosotros</h2>
+          <ul>
+            <li><a href="#empresa">Empresa</a></li>
+            <li><a href="#sectores">Sectores</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__col" aria-label="Servicios">
+          <h2>Servicios</h2>
+          <ul>
+            <li><a href="#servicios">Edificación</a></li>
+            <li><a href="#servicios">Instalaciones</a></li>
+            <li><a href="#servicios">Medio ambiente</a></li>
+            <li><a href="#servicios">Energía</a></li>
+            <li><a href="#servicios">Actividades</a></li>
+            <li><a href="#servicios">Otros servicios</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__col" aria-label="Otros enlaces">
+          <h2>Otros enlaces</h2>
+          <ul>
+            <li><a href="#top">Dossier general de prensa</a></li>
+            <li><a href="#top">Aviso legal</a></li>
+            <li><a href="#top">Política de Cookies</a></li>
+            <li><a href="#top">Política de Privacidad</a></li>
+          </ul>
+        </nav>
+        <div class="footer__col footer__contact">
+          <h2>Contacto</h2>
+          <ul>
+            <li>Avda. Universidad de Elche, 64 - AC Local 3, 03202 Elche (Alicante)</li>
+            <li><a href="mailto:info@ingenieriarocamora.com">info@ingenieriarocamora.com</a></li>
+            <li><a href="mailto:comercial@ingenieriarocamora.com">comercial@ingenieriarocamora.com</a></li>
+            <li><a href="tel:+34966615053">+34 966 61 50 53</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 Ingeniería Joaquín Rocamora</p>
+        <p>Maqueta de propuesta de diseño</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Etiqueta de propuesta -->
+  <aside class="proposal" aria-label="Navegación entre propuestas">
+    <p class="proposal__name"><strong>Propuesta 1</strong> · Corporativa luminosa</p>
+    <p class="proposal__links">
+      <a href="../">← Opciones</a>
+      <a href="../propuesta-2/">Propuesta 2</a>
+      <a href="../propuesta-3/">Propuesta 3</a>
+    </p>
+  </aside>
+
+</body>
+</html>
