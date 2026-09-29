@@ -50,7 +50,7 @@
       opacity: .07;
       pointer-events: none;
     }
-    .logo { height: 44px; width: auto; }
+    .logo { height: 42px; width: auto; }
     .eyebrow {
       display: inline-flex;
       align-items: center;
@@ -75,6 +75,15 @@
     .lead { margin-top: 18px; max-width: 680px; color: #c5d0dc; font-size: 17px; }
 
     main { margin-top: -72px; padding-bottom: 72px; position: relative; }
+    .round { display: flex; align-items: baseline; gap: 14px; margin: 56px 0 20px; }
+    .round h2 { font-family: Manrope, sans-serif; font-size: 22px; color: var(--navy); }
+    .round p { color: var(--muted); font-size: 15px; }
+    .round-first { margin-top: 0; position: relative; }
+    .round-note { color: #c5d0dc; font-size: 15px; max-width: 900px; margin: -8px 0 24px; position: relative; }
+    .round-first h2, .round-first p { color: #fff; }
+    .round-first p { color: #c5d0dc; }
+    .new-badge { font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; background: var(--gold); color: var(--navy); padding: 3px 10px; border-radius: 99px; }
+    @media (max-width: 680px) { .round { flex-direction: column; gap: 4px; } }
     .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
     .card {
       background: #fff;
@@ -152,14 +161,50 @@
 <body>
   <header>
     <div class="wrap">
-      <img class="logo" src="assets/img/logo-horizontal-blanco.png" alt="Ingeniería Joaquín Rocamora">
+      <img class="logo" src="assets/img/logo-compacto-blanco.png" alt="Ingeniería Joaquín Rocamora">
       <p class="eyebrow">Nueva web · Propuestas de diseño</p>
-      <h1>Seis direcciones visuales para la página de inicio</h1>
-      <p class="lead">Todas las maquetas usan exactamente el mismo contenido que la web en desarrollo; solo cambia el diseño. El dorado del logo se mantiene en todas como color de realce.</p>
+      <h1>Propuestas de diseño para la página de inicio</h1>
+      <p class="lead">Todas las maquetas usan el contenido real de la web en desarrollo; solo cambia el diseño. El dorado del logo se mantiene en todas como color de realce.</p>
+      <div class="round round-first" style="margin-top:40px"><span class="new-badge">Nuevas</span><h2>Ronda 3 · Con las indicaciones del cliente</h2></div>
+      <p class="round-note">Todas incluyen: menú centrado que pasa a fondo blanco al hacer scroll, logo apaisado con el triángulo a la altura del texto, cinta blanca con las cifras visible nada más entrar, «Todo lo que necesita tu proyecto» en servicios y «Una trayectoria que se demuestra» en proyectos.</p>
     </div>
   </header>
 
   <main class="wrap">
+    <div class="grid">
+      <a class="card" href="propuesta-7/">
+        <div class="shot"><img src="assets/previews/propuesta-7.jpg" alt="Vista previa de la propuesta 7"></div>
+        <div class="body">
+          <span class="num"><b>07</b>Propuesta</span>
+          <h2>Bloque azul y foto</h2>
+          <p>Evolución del diseño actual de TARSA: bloque azul con el titular a la izquierda, foto a la derecha y la cinta de cifras montada sobre el borde del hero.</p>
+          <div class="tags"><span>Hero partido</span><span>«Un equipo técnico para cada desafío»</span></div>
+          <span class="go">Ver propuesta</span>
+        </div>
+      </a>
+      <a class="card" href="propuesta-8/">
+        <div class="shot"><img src="assets/previews/propuesta-8.jpg" alt="Vista previa de la propuesta 8"></div>
+        <div class="body">
+          <span class="num"><b>08</b>Propuesta</span>
+          <h2>Foto panorámica</h2>
+          <p>Foto a pantalla completa con la cinta blanca de cifras anclada abajo. Servicios en pestañas, cada uno con su foto.</p>
+          <div class="tags"><span>Pantalla completa</span><span>Servicios en pestañas</span></div>
+          <span class="go">Ver propuesta</span>
+        </div>
+      </a>
+      <a class="card" href="propuesta-9/">
+        <div class="shot"><img src="assets/previews/propuesta-9.jpg" alt="Vista previa de la propuesta 9"></div>
+        <div class="body">
+          <span class="num"><b>09</b>Propuesta</span>
+          <h2>Clara con mosaico</h2>
+          <p>Versión luminosa: titular a la izquierda y mosaico con tres obras reales a la derecha. Proyectos en carrusel.</p>
+          <div class="tags"><span>Luminosa</span><span>Mosaico de obras</span></div>
+          <span class="go">Ver propuesta</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="round"><h2>Rondas 1 y 2</h2><p>Primeras direcciones visuales</p></div>
     <div class="grid">
       <a class="card" href="propuesta-1/">
         <div class="shot"><img src="assets/previews/propuesta-1.jpg" alt="Vista previa de la propuesta 1"></div>
@@ -236,7 +281,7 @@
         <h3>A tener en cuenta</h3>
         <ul>
           <li>Son maquetas visuales en HTML, no la web final: los enlaces internos y el formulario no están operativos.</li>
-          <li>Las propuestas 1 a 3 son una primera ronda y las 4 a 6 una segunda. Se pueden combinar elementos de varias propuestas (p. ej. la cabecera de una y los servicios de otra).</li>
+          <li>Las propuestas 7 a 9 recogen las indicaciones del cliente sobre el diseño de TARSA. Se pueden combinar elementos de varias propuestas (p. ej. la cabecera de una y los servicios de otra).</li>
           <li>Textos, cifras y fotos son los de la web en desarrollo.</li>
         </ul>
       </div>

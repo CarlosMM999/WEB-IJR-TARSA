@@ -1,9 +1,9 @@
 # Nueva web Ingeniería Joaquín Rocamora · Propuestas de diseño
 
-Seis propuestas alternativas de diseño para la **página de inicio** de la nueva web de
+Nueve propuestas alternativas de diseño para la **página de inicio** de la nueva web de
 Ingeniería Joaquín Rocamora, como referencia para el equipo de TARSA.
 
-Todas usan el **mismo contenido** (textos, cifras y fotografías) que la web en desarrollo;
+Todas usan el **contenido real** (textos, cifras y fotografías) que la web en desarrollo;
 solo cambia el diseño. En todas se mantiene el **dorado del logo (#E9AC00)** como color de realce
 y el azul marino corporativo (#082440).
 
@@ -15,6 +15,13 @@ y el azul marino corporativo (#082440).
 | 4 | [Minimal suiza](propuesta-4/) | Diseño tipográfico y muy ordenado: titulares grandes, rejilla estricta, líneas finas, dorado con mucha contención. |
 | 5 | [Cálida y cercana](propuesta-5/) | Ingeniería mediterránea y humana: tonos arena, formas redondeadas, fotos en arco, toque de serif cursiva. |
 | 6 | [Industrial institucional](propuesta-6/) | Estilo de gran ingeniería consolidada: carrusel de proyectos en portada, titulares condensados, mucha foto de obra. |
+| 7 | [Bloque azul y foto](propuesta-7/) | **Ronda 3.** Evolución del diseño actual de TARSA: hero partido azul + foto, cinta blanca de cifras sobre el borde. |
+| 8 | [Foto panorámica](propuesta-8/) | **Ronda 3.** Foto a pantalla completa con cinta blanca de cifras abajo; servicios en pestañas con foto. |
+| 9 | [Clara con mosaico](propuesta-9/) | **Ronda 3.** Versión luminosa con mosaico de tres obras reales y proyectos en carrusel. |
+
+Las propuestas 7, 8 y 9 recogen las indicaciones del cliente sobre el diseño de TARSA: menú centrado que pasa a fondo
+blanco al hacer scroll, logo apaisado con el triángulo a la altura del texto, cinta blanca con las cifras visible nada
+más entrar, «Todo lo que necesita tu proyecto» en servicios y «Una trayectoria que se demuestra» en proyectos.
 
 ## Cómo verlas
 
